@@ -187,17 +187,19 @@ MOIS_NUM = {"janvier": 1, "fevrier": 2, "février": 2, "mars": 3, "avril": 4, "m
 
 
 def date_tri(folder):
-    """'semaine 23 novembre cap 2' -> valeur de tri (année scolaire : septembre en premier)."""
-    m = re.search(r"(\d{1,2})\s+([a-zéû]+)", folder.lower())
-    if not m or m.group(2) not in MOIS_NUM:
+    """'semaine 23 novembre cap 2', 'du 3 au 07 décembre' -> valeur de tri (année scolaire : septembre en premier)."""
+    mois_re = "|".join(MOIS_NUM)
+    trouves = re.findall(r"(\d{1,2})\s+(?:au\s+\d{1,2}\s+)?(" + mois_re + r")\b", folder.lower())
+    if not trouves:
         return 0
-    mois = MOIS_NUM[m.group(2)]
-    return ((mois - 9) % 12) * 100 + int(m.group(1))
+    jour, mois = trouves[0]
+    return ((MOIS_NUM[mois] - 9) % 12) * 100 + int(jour)
 
 
 def titre_semaine(folder):
     """'semaine 23 novembre cap 2' -> 'Semaine 23 novembre — CAP 2'"""
     t = re.sub(r"\s+", " ", folder).strip()
+    t = re.sub(r"^semain\b", "semaine", t, flags=re.I)  # faute de frappe fréquente
     t = re.sub(r"\b0(\d)\b", r"\1", t)
     t = re.sub(r"\s*\bcap\s*(\d)\b", lambda m: " — CAP " + m.group(1), t, flags=re.I)
     return t[:1].upper() + t[1:]
