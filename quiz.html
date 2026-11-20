@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz – CAP Cuisine</title>
+  <meta name="description" content="Quiz d'entraînement CAP Cuisine : sciences appliquées, technologie culinaire, gestion appliquée.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">MFR de Peyregoux · CAP Cuisine</p>
+      <h1>Quiz</h1>
+      <p class="lead">Choisis un quiz : 10 questions, la correction s'affiche à chaque réponse.</p>
+    </div>
+  </header>
+  <nav class="tabs" aria-label="Sections">
+    <div class="wrap tabs-inner">
+      <a href="index.html#revision">Révision</a>
+      <a href="quiz.html" aria-current="page">Quiz</a>
+      <a href="fiches.html">Fiches techniques</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="liste-quiz"></section>
+    <section id="jeu" hidden></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">MFR de Peyregoux · CAP Cuisine</div>
+  </footer>
+
+  <script src="quizzes-data.js"></script>
+  <script src="quiz-app.js"></script>
+</body>
+</html>

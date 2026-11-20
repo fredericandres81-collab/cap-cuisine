@@ -238,3 +238,23 @@ table.denrees tr.sous-titre td { background: #f4efe7; font-weight: 700; font-siz
 body.vue-fiche .site-header { padding-top: 14px; }
 body.vue-fiche .site-header h1 { font-size: 1.3rem; margin: 2px 0 6px; }
 body.vue-fiche .site-header .lead { display: none; }
+
+/* =========================================================
+   Page des quiz
+   ========================================================= */
+#liste-quiz { padding-top: 8px; }
+#jeu { padding: 20px 0 8px; }
+.quiz-tete { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
+.quiz-tete .retour { margin-bottom: 0; }
+.progression { height: 8px; background: var(--line); border-radius: 999px; overflow: hidden; margin: 12px 0 16px; }
+.progression span { display: block; height: 100%; background: var(--accent); transition: width .3s; }
+.q-texte { font-weight: 700; font-size: 1.1rem; margin: 6px 0 14px; }
+.explain-ok { color: var(--ok); }
+.explain-ko { color: var(--ko); }
+.suivant { width: 100%; margin-top: 4px; padding: 14px; }
+.resultat { text-align: center; padding: 24px 18px; }
+.resultat .actions { justify-content: center; }
+.score-final { font-size: 3rem; font-weight: 800; color: var(--accent); margin: 4px 0; }
+.lead-dark { font-size: 1.1rem; margin: 0 0 8px; }
+.bonne-rep { color: var(--ok); font-weight: 600; margin: 0; }
+.quiz-liens { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
