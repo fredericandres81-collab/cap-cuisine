@@ -1,6 +1,76 @@
-// Affichage des fiches techniques (données dans fiches-data.js)
+// Affichage des fiches techniques.
+// Les données sont chiffrées (protege/*.enc) : elles ne sont lisibles qu'avec le code d'accès de la classe.
 (function () {
-  const DATA = window.FICHES_DATA;
+  // ---------- Déchiffrement (même format que outils/chiffrer.py) ----------
+  const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+  let CLE = null;
+
+  async function deriverCle(code, meta) {
+    const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(code), "PBKDF2", false, ["deriveKey"]);
+    return crypto.subtle.deriveKey({ name: "PBKDF2", salt: b64(meta.sel), iterations: meta.iter, hash: "SHA-256" },
+      base, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+  }
+  const dechiffrer = (cle, buf) => crypto.subtle.decrypt({ name: "AES-GCM", iv: buf.slice(0, 12) }, cle, buf.slice(12));
+  async function lireChiffre(url) {
+    const r = await fetch(url);
+    if (!r.ok) throw new Error("Fichier introuvable : " + url);
+    return dechiffrer(CLE, new Uint8Array(await r.arrayBuffer()));
+  }
+  async function blobChiffre(url, type) {
+    return URL.createObjectURL(new Blob([await lireChiffre("protege/" + url + ".enc")], { type }));
+  }
+  // Déchiffre un PDF et le donne au téléphone (téléchargement, puis ouverture avec son lecteur PDF)
+  async function ouvrirPdf(url, nom, bouton) {
+    const texte = bouton.textContent;
+    bouton.disabled = true; bouton.textContent = "⏳ Préparation…";
+    try {
+      const u = await blobChiffre(url, "application/pdf");
+      const a = document.createElement("a");
+      a.href = u; a.download = nom.replace(/[\\/:*?"<>|]/g, "-") + ".pdf";
+      document.body.append(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(u), 60000);
+    } catch (e) { alert("Impossible d'ouvrir le PDF."); }
+    bouton.disabled = false; bouton.textContent = texte;
+  }
+
+  const memo = {
+    lire() { try { return localStorage.getItem("code-fiches"); } catch (e) { return null; } },
+    garder(c) { try { localStorage.setItem("code-fiches", c); } catch (e) { /* stockage indisponible */ } },
+    oublier() { try { localStorage.removeItem("code-fiches"); } catch (e) { /* */ } }
+  };
+
+  async function essayerCode(code) {
+    const meta = await (await fetch("protege/cle.json", { cache: "no-store" })).json();
+    const cle = await deriverCle(code.trim().toLowerCase(), meta);
+    await dechiffrer(cle, b64(meta.verif)); // lève une erreur si le code est faux
+    CLE = cle;
+    const json = new TextDecoder().decode(await lireChiffre("protege/fiches-data.enc"));
+    return JSON.parse(json);
+  }
+
+  const verrou = document.getElementById("verrou");
+  const formCode = document.getElementById("form-code");
+  const msgCode = document.getElementById("msg-code");
+
+  async function ouvrir(code, depuisMemoire) {
+    msgCode.textContent = "Vérification…";
+    try {
+      const data = await essayerCode(code);
+      memo.garder(code.trim().toLowerCase());
+      verrou.hidden = true;
+      demarrer(data);
+    } catch (e) {
+      if (depuisMemoire) { memo.oublier(); msgCode.textContent = ""; }
+      else msgCode.textContent = "Code incorrect. Demande-le à ton formateur.";
+      verrou.hidden = false;
+      document.getElementById("code").focus();
+    }
+  }
+  formCode.addEventListener("submit", e => { e.preventDefault(); ouvrir(document.getElementById("code").value, false); });
+  const enMemoire = memo.lire();
+  if (enMemoire) ouvrir(enMemoire, true); else verrou.hidden = false;
+
+  function demarrer(DATA) {
   const byId = Object.fromEntries(DATA.fiches.map(f => [f.id, f]));
   const $ = sel => document.querySelector(sel);
   const liste = $("#liste"), vue = $("#fiche");
@@ -151,14 +221,19 @@
     const btnPrint = el("button", { type: "button", class: "btn", text: "🖨️ Imprimer" });
     btnPrint.addEventListener("click", () => window.print());
     actions.append(btnPrint);
-    if (f.schema) actions.append(el("a", { class: "btn btn-light", href: f.schema, target: "_blank", rel: "noopener", text: "📄 Schéma (PDF)" }));
-    if (f.pdf) actions.append(el("a", { class: "btn btn-light", href: f.pdf, target: "_blank", rel: "noopener", text: "📄 Fiche (PDF)" }));
+    for (const [cle, label] of [["schema", "📄 Schéma (PDF)"], ["pdf", "📄 Fiche (PDF)"]]) {
+      if (!f[cle]) continue;
+      const b = el("button", { type: "button", class: "btn btn-light", text: label });
+      b.addEventListener("click", () => ouvrirPdf(f[cle], f.titre + (cle === "schema" ? " - schéma" : ""), b));
+      actions.append(b);
+    }
 
     vue.append(retour, head, infos, actions);
 
     if (f.video) {
-      vue.append(section("Vidéo", el("p", { class: "muted", text: f.video.titre }),
-        el("video", { src: f.video.src, controls: "", preload: "metadata", playsinline: "", class: "video" })));
+      const video = el("video", { controls: "", preload: "metadata", playsinline: "", class: "video" });
+      blobChiffre(f.video.src, "video/mp4").then(u => { video.src = u; }).catch(() => {});
+      vue.append(section("Vidéo", el("p", { class: "muted", text: f.video.titre }), video));
     }
 
     // Denrées + calcul des quantités
@@ -239,4 +314,5 @@
   $("#q").addEventListener("input", afficherListe);
   window.addEventListener("hashchange", router);
   router();
+  }
 })();

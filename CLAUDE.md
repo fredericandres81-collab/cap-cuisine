@@ -8,9 +8,16 @@ lui répondre simplement, sans jargon.
 
 - `index.html` : accueil + fiches de révision.
 - `quiz.html` + `quiz-app.js` : quiz. Questions dans `quizzes-data.js` (un bloc par quiz, `bonne` = index de la bonne réponse).
-- `fiches.html` + `fiches.js` : fiches techniques. Données dans `fiches-data.js` — **fichier généré, ne pas modifier à la main**.
-- `sources/` : fiches Word d'origine (catalogue par thème + `fiches techniques données/<semaine>/`).
+- `fiches.html` + `fiches.js` : fiches techniques, **protégées par un code d'accès** (code de classe donné par le formateur).
+  Tout le contenu des fiches est chiffré dans `protege/` (AES-GCM, clé dérivée du code, voir `outils/chiffrer.py`) ;
+  le navigateur déchiffre après saisie du code.
+- Fichiers EN CLAIR, jamais commités (`.gitignore`) : `fiches-data.js`, `schemas/`, `media/`, `sources/` (fiches Word).
 - `outils/convertir_fiches.py` : convertit `sources/` en `fiches-data.js`, `schemas/` (PDF) et `media/` (vidéos).
+- `outils/chiffrer.py` : `publier CODE` chiffre ces fichiers dans `protege/` (dont l'archive `sources.tar.gz.enc`) ;
+  `extraire CODE` restaure `sources/` depuis l'archive chiffrée.
+
+**Le code d'accès n'est écrit nulle part dans le dépôt : le demander au formateur à chaque session.** Ne jamais
+l'inscrire dans un fichier, un commit ou un message de commit.
 
 ## Mise à jour hebdomadaire des fiches (demande récurrente)
 
@@ -20,7 +27,11 @@ fiches Word des menus, parfois des PDF et une vidéo. Sur son PC, c'est dans
 Il dépose une copie du dossier de la semaine sur son Google Drive, dans le dossier
 `Fiches techniques CAP Cuisine/fiches techniques données`.
 
-1. Trouver le nouveau dossier avec le connecteur Google Drive (`search_files`).
+0. Demander le code d'accès au formateur, puis `python3 -I outils/chiffrer.py extraire CODE` (restaure `sources/`).
+1. Trouver le nouveau dossier avec le connecteur Google Drive (`search_files`). Depuis novembre, il est synchronisé
+   automatiquement depuis le PC dans « Ordinateurs › Mon ordinateur portable › … › fiches techniques données ».
+   Si une fiche de la semaine porte le même nom qu'une fiche du catalogue, inutile de la télécharger : la copier
+   depuis `sources/<thème>/` (vérifier que la taille est la même que sur le Drive).
 2. Télécharger chaque fichier dans `sources/fiches techniques données/<nom du dossier>/` avec
    `curl -sSL "https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t"`
    (marche si le dossier Drive est partagé « Tous les utilisateurs disposant du lien » ; sinon, demander au formateur
@@ -31,8 +42,11 @@ Il dépose une copie du dossier de la semaine sur son Google Drive, dans le doss
    - Nouvelle fiche : ajoutée au catalogue ; thème deviné (bandeau « Fiche technique — <Thème> », sinon mots-clés
      `MOTS_THEMES`). Si le thème deviné est faux, l'ajouter dans `NEW_FORMAT` (nom de fichier → thème).
    - Les semaines sont triées de la plus récente à la plus ancienne (année scolaire, septembre en premier).
-4. Tester avec Playwright (vue téléphone) : la nouvelle semaine s'affiche, chaque nouvelle fiche s'ouvre sans erreur JS.
-5. Lancer `python3 -I outils/maj_version.py` (numéro de version sur les .css/.js, sinon les téléphones gardent
+4. Chiffrer : `python3 -I outils/chiffrer.py publier CODE`.
+5. Tester avec Playwright (vue téléphone) **via un serveur local** (`python3 -m http.server`, `fetch` ne marche pas en
+   `file://`), sur une copie ne contenant que les fichiers suivis par git : saisir le code, la nouvelle semaine
+   s'affiche, chaque nouvelle fiche s'ouvre sans erreur JS.
+6. Lancer `python3 -I outils/maj_version.py` (numéro de version sur les .css/.js, sinon les téléphones gardent
    l'ancienne version en cache), puis commit et push sur `main` ; GitHub Pages republie en 1 à 2 minutes. Mettre à jour le nombre de fiches dans
    `index.html` si besoin (« 197 fiches »).
 
@@ -42,6 +56,7 @@ Il dépose une copie du dossier de la semaine sur son Google Drive, dans le doss
 - Commits : utiliser la configuration git du dépôt (adresse anonyme GitHub `users.noreply.github.com`), **jamais** l'adresse Gmail du formateur.
 - Le site est masqué des moteurs de recherche (`<meta name="robots" content="noindex, nofollow">` sur chaque page) : le garder sur toute nouvelle page.
 
-- Les fiches sont adaptées d'un livre ; le formateur a choisi de les publier en public, en connaissance de cause.
+- Les fiches sont adaptées d'un livre : elles ne doivent jamais être publiées en clair (seulement dans `protege/`).
+  Vérifier avec `git status` qu'aucun fichier de `.gitignore` n'est ajouté par erreur.
 - `localStorage` sert seulement au meilleur score des quiz (toujours dans un try/catch).
 - Ne jamais inclure d'informations personnelles dans des requêtes vers des services extérieurs.

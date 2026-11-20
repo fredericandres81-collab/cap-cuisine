@@ -1,0 +1,5 @@
+# Fichiers en clair des fiches techniques : ne jamais publier (seules les versions chiffrées dans protege/ le sont)
+/fiches-data.js
+/schemas/
+/media/
+/sources/

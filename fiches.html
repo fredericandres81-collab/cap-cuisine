@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, nofollow">
   <title>Fiches techniques – CAP Cuisine</title>
   <meta name="description" content="Toutes les fiches techniques du CAP Cuisine : denrées, matériel, étapes et schémas.">
-  <link rel="stylesheet" href="style.css?v=202611201344">
+  <link rel="stylesheet" href="style.css?v=202611201357">
 </head>
 <body>
   <header class="site-header">
@@ -25,8 +25,21 @@
   </nav>
 
   <main class="wrap">
+    <!-- Écran du code d'accès -->
+    <section id="verrou" class="card verrou" hidden>
+      <p class="verrou-icone" aria-hidden="true">🔒</p>
+      <h2>Fiches réservées à la classe</h2>
+      <p class="muted">Entre le code d'accès donné par ton formateur.</p>
+      <form id="form-code" autocomplete="off">
+        <label class="sr-only" for="code">Code d'accès</label>
+        <input id="code" type="password" inputmode="text" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder="Code d'accès" required>
+        <button class="btn" type="submit">Entrer</button>
+      </form>
+      <p id="msg-code" class="msg-code" aria-live="polite"></p>
+    </section>
+
     <!-- Liste -->
-    <section id="liste">
+    <section id="liste" hidden>
       <div class="search-bar">
         <label class="sr-only" for="q">Rechercher une fiche</label>
         <input id="q" type="search" placeholder="Rechercher : sole, crème anglaise, beurre blanc…" autocomplete="off">
@@ -45,7 +58,6 @@
     <div class="wrap">MFR de Peyregoux · CAP Cuisine</div>
   </footer>
 
-  <script src="fiches-data.js?v=202611201344"></script>
-  <script src="fiches.js?v=202611201344"></script>
+  <script src="fiches.js?v=202611201357"></script>
 </body>
 </html>
