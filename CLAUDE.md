@@ -32,10 +32,13 @@ Il dépose une copie du dossier de la semaine sur son Google Drive, dans le doss
      `MOTS_THEMES`). Si le thème deviné est faux, l'ajouter dans `NEW_FORMAT` (nom de fichier → thème).
    - Les semaines sont triées de la plus récente à la plus ancienne (année scolaire, septembre en premier).
 4. Tester avec Playwright (vue téléphone) : la nouvelle semaine s'affiche, chaque nouvelle fiche s'ouvre sans erreur JS.
-5. Commit puis push sur `main` ; GitHub Pages republie en 1 à 2 minutes. Mettre à jour le nombre de fiches dans
+5. Lancer `python3 -I outils/maj_version.py` (numéro de version sur les .css/.js, sinon les téléphones gardent
+   l'ancienne version en cache), puis commit et push sur `main` ; GitHub Pages republie en 1 à 2 minutes. Mettre à jour le nombre de fiches dans
    `index.html` si besoin (« 197 fiches »).
 
 ## Points d'attention
+
+- Après toute modification du site : `python3 -I outils/maj_version.py` avant le commit (cache des téléphones).
 
 - Les fiches sont adaptées d'un livre ; le formateur a choisi de les publier en public, en connaissance de cause.
 - `localStorage` sert seulement au meilleur score des quiz (toujours dans un try/catch).
