@@ -39,6 +39,8 @@ Il dépose une copie du dossier de la semaine sur son Google Drive, dans le doss
 ## Points d'attention
 
 - Après toute modification du site : `python3 -I outils/maj_version.py` avant le commit (cache des téléphones).
+- Commits : utiliser la configuration git du dépôt (adresse anonyme GitHub `users.noreply.github.com`), **jamais** l'adresse Gmail du formateur.
+- Le site est masqué des moteurs de recherche (`<meta name="robots" content="noindex, nofollow">` sur chaque page) : le garder sur toute nouvelle page.
 
 - Les fiches sont adaptées d'un livre ; le formateur a choisi de les publier en public, en connaissance de cause.
 - `localStorage` sert seulement au meilleur score des quiz (toujours dans un try/catch).
