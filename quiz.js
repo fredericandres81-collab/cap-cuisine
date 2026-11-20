@@ -134,15 +134,3 @@ document.getElementById("restart").addEventListener("click", () => {
 });
 
 afficherQuiz();
-
-// Impression d'une seule fiche technique
-document.querySelectorAll("button.print").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const fiche = btn.closest(".fiche");
-    fiche.classList.add("printing-target");
-    document.body.classList.add("printing");
-    window.print();
-    document.body.classList.remove("printing");
-    fiche.classList.remove("printing-target");
-  });
-});

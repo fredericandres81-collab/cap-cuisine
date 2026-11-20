@@ -124,3 +124,117 @@ button#restart, button.print {
   .print { display: none !important; }
   .card { border: 1px solid #999; }
 }
+
+/* =========================================================
+   Page des fiches techniques
+   ========================================================= */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.tabs a[aria-current="page"] { background: rgba(255,255,255,.22); }
+.small { font-size: .85rem; }
+
+.search-bar { margin: 24px 0 12px; }
+.search-bar input {
+  width: 100%; font: inherit; font-size: 1.05rem;
+  padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink);
+}
+.search-bar input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 16px; }
+.chip {
+  flex: none; font: inherit; font-size: .9rem; font-weight: 600;
+  border: 1px solid var(--line); background: #fff; color: var(--ink);
+  border-radius: 999px; padding: 7px 12px; cursor: pointer; display: inline-flex; gap: 6px; align-items: center;
+}
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.chip-n { font-size: .78rem; opacity: .75; }
+
+.semaine { border-left: 4px solid var(--accent); }
+.h-small { font-size: 1.05rem; margin: 0 0 8px; }
+.liens { margin: 0; padding-left: 20px; }
+.liens li { margin: 4px 0; }
+.liens a, .retour { color: var(--accent); font-weight: 600; }
+
+.theme-titre { font-size: 1.3rem; margin: 28px 0 10px; }
+.grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.fiche-item {
+  display: flex; flex-direction: column; gap: 4px;
+  background: #fff; border: 1px solid var(--line); border-radius: 12px;
+  padding: 12px 14px; text-decoration: none; color: var(--ink);
+}
+.fiche-item:hover, .fiche-item:focus-visible { border-color: var(--accent); }
+.fiche-item-titre { font-weight: 700; line-height: 1.3; }
+.fiche-item-meta { font-size: .85rem; color: var(--muted); }
+
+/* Détail */
+#fiche { padding: 20px 0 8px; }
+.retour { display: inline-block; margin-bottom: 14px; text-decoration: none; }
+.eyebrow-dark { margin: 0; color: var(--accent); font-weight: 700; font-size: .85rem; text-transform: uppercase; letter-spacing: .04em; }
+.fiche-titre { font-size: clamp(1.6rem, 5vw, 2.2rem); margin: 4px 0 8px; line-height: 1.2; }
+.poste { margin: 0 0 8px; font-weight: 600; }
+.description { margin: 0 0 14px; color: var(--muted); }
+
+.infos { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; margin: 12px 0; }
+.info { background: var(--accent-soft); border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; }
+.info-label { font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; color: var(--accent); font-weight: 700; }
+.info-val { font-weight: 600; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 6px; }
+.btn {
+  font: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+  background: var(--accent); color: #fff; border: 1px solid var(--accent);
+  border-radius: 10px; padding: 10px 14px;
+}
+.btn-light { background: #fff; color: var(--accent); }
+
+.fiche-section { margin-top: 26px; }
+.h-section { font-size: 1.25rem; margin: 0 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--accent-soft); }
+
+.couverts { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 12px; }
+.couverts label { font-weight: 700; }
+.couverts input { width: 90px; font: inherit; font-size: 1.05rem; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; }
+
+.table-scroll { overflow-x: auto; background: #fff; border: 1px solid var(--line); border-radius: 12px; }
+table.denrees td:first-child { font-weight: 400; }
+table.denrees th, table.denrees td { padding: 8px 10px; }
+table.denrees .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+table.denrees td.change { color: var(--accent); font-weight: 700; }
+table.denrees tr.sous-titre td { background: #f4efe7; font-weight: 700; font-size: .9rem; }
+.note { font-size: .88rem; color: var(--muted); margin: 8px 0 0; }
+
+.materiel { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.mat { margin: 0; }
+.mat h3 { margin: 0 0 6px; color: var(--accent); font-size: 1rem; }
+.mat ul { margin: 0; padding-left: 18px; }
+
+.etapes { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.etape { display: flex; gap: 12px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+.etape-n {
+  flex: none; width: 32px; height: 32px; border-radius: 50%;
+  background: var(--accent); color: #fff; font-weight: 700; display: grid; place-items: center;
+}
+.etape-corps { flex: 1; min-width: 0; }
+.etape-tete { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; align-items: baseline; }
+.etape-tete h3 { margin: 4px 0; font-size: 1.02rem; }
+.duree { font-size: .85rem; color: var(--muted); white-space: nowrap; }
+.etape ul { margin: 6px 0 0; padding-left: 18px; }
+.etape li { margin-bottom: 3px; }
+.vigilance { margin: 8px 0 0; background: #fff6e0; border-radius: 8px; padding: 8px 10px; font-size: .92rem; }
+.remarque { border-left: 4px solid var(--accent); }
+.video { width: 100%; max-width: 480px; border-radius: 12px; background: #000; }
+.source { margin-top: 20px; }
+
+.voir-fiches { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.voir-fiches p { margin: 0; }
+
+@media print {
+  .site-header, .tabs, .site-footer, .retour, .actions, .couverts input + span { display: none !important; }
+  #liste { display: none !important; }
+  body { background: #fff; }
+  .etape, .card, .table-scroll { break-inside: avoid; border-color: #bbb; }
+  .info { background: #f2f2f2; }
+}
+
+/* Fiche ouverte : bandeau réduit pour laisser la place au contenu */
+body.vue-fiche .site-header { padding-top: 14px; }
+body.vue-fiche .site-header h1 { font-size: 1.3rem; margin: 2px 0 6px; }
+body.vue-fiche .site-header .lead { display: none; }

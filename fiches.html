@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fiches techniques – CAP Cuisine</title>
+  <meta name="description" content="Toutes les fiches techniques du CAP Cuisine : denrées, matériel, étapes et schémas.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">MFR de Peyregoux · CAP Cuisine</p>
+      <h1>Fiches techniques</h1>
+      <p class="lead">Cherche une recette, adapte les quantités au nombre de couverts et imprime la fiche.</p>
+    </div>
+  </header>
+  <nav class="tabs" aria-label="Sections">
+    <div class="wrap tabs-inner">
+      <a href="index.html#revision">Révision</a>
+      <a href="index.html#quiz">Quiz</a>
+      <a href="fiches.html" aria-current="page">Fiches techniques</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <!-- Liste -->
+    <section id="liste">
+      <div class="search-bar">
+        <label class="sr-only" for="q">Rechercher une fiche</label>
+        <input id="q" type="search" placeholder="Rechercher : sole, crème anglaise, beurre blanc…" autocomplete="off">
+      </div>
+      <div class="chips" id="themes" role="group" aria-label="Filtrer par thème"></div>
+      <div id="semaines"></div>
+      <p class="muted" id="compte" aria-live="polite"></p>
+      <div id="resultats"></div>
+    </section>
+
+    <!-- Détail d'une fiche -->
+    <article id="fiche" hidden></article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">MFR de Peyregoux · CAP Cuisine</div>
+  </footer>
+
+  <script src="fiches-data.js"></script>
+  <script src="fiches.js"></script>
+</body>
+</html>
