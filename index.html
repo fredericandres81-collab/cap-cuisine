@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAP Cuisine – MFR de Peyregoux</title>
+  <meta name="description" content="Fiches de révision, quiz et fiches techniques pour les apprentis CAP Cuisine.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">MFR de Peyregoux</p>
+      <h1>CAP Cuisine</h1>
+      <p class="lead">Révise tes cours, entraîne-toi avec les quiz et retrouve les fiches techniques.</p>
+    </div>
+  </header>
+  <nav class="tabs" aria-label="Sections">
+    <div class="wrap tabs-inner">
+      <a href="#revision">Révision</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#fiches">Fiches techniques</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <!-- ===================== RÉVISION ===================== -->
+    <section id="revision">
+      <h2>Fiches de révision</h2>
+
+      <details class="card" open>
+        <summary>Hygiène et HACCP</summary>
+        <h3>Les températures à connaître</h3>
+        <table>
+          <tr><th>Situation</th><th>Température</th></tr>
+          <tr><td>Produits très périssables (viande, poisson, produits laitiers)</td><td>0 °C à +3 °C</td></tr>
+          <tr><td>Produits surgelés</td><td>−18 °C ou moins</td></tr>
+          <tr><td>Liaison chaude (maintien au chaud)</td><td>+63 °C minimum</td></tr>
+          <tr><td>Refroidissement rapide</td><td>de +63 °C à +10 °C en moins de 2 h</td></tr>
+          <tr><td>Remise en température</td><td>de +3 °C à +63 °C en moins de 1 h</td></tr>
+        </table>
+        <h3>La règle des 5 M</h3>
+        <p>Les 5 sources de contamination : <strong>M</strong>atière, <strong>M</strong>ain-d'œuvre, <strong>M</strong>ilieu, <strong>M</strong>atériel, <strong>M</strong>éthode.</p>
+        <h3>La marche en avant</h3>
+        <p>Les produits avancent toujours du <strong>sale</strong> vers le <strong>propre</strong>, sans jamais revenir en arrière ni croiser les déchets.</p>
+      </details>
+
+      <details class="card">
+        <summary>Les taillages des légumes</summary>
+        <table>
+          <tr><th>Taillage</th><th>Forme</th></tr>
+          <tr><td>Julienne</td><td>Bâtonnets très fins (1 à 2 mm, 4 à 5 cm de long)</td></tr>
+          <tr><td>Brunoise</td><td>Petits dés de 1 à 2 mm</td></tr>
+          <tr><td>Jardinière</td><td>Bâtonnets de 4 à 5 mm de section, environ 4 cm de long</td></tr>
+          <tr><td>Macédoine</td><td>Dés de 4 à 5 mm</td></tr>
+          <tr><td>Paysanne</td><td>Fines tranches d'environ 1 cm × 1 cm</td></tr>
+          <tr><td>Mirepoix</td><td>Gros dés irréguliers (pour les fonds et les sauces)</td></tr>
+          <tr><td>Ciseler</td><td>Tailler un oignon ou une échalote en tout petits dés</td></tr>
+          <tr><td>Chiffonnade</td><td>Feuilles (salade, oseille…) roulées puis taillées en fines lanières</td></tr>
+        </table>
+      </details>
+
+      <details class="card">
+        <summary>Fonds et sauces de base</summary>
+        <h3>Les roux</h3>
+        <p>Beurre + farine <strong>à poids égal</strong>. Selon la cuisson : roux blanc, roux blond ou roux brun.</p>
+        <h3>Les sauces mères</h3>
+        <table>
+          <tr><th>Sauce</th><th>Base</th></tr>
+          <tr><td>Béchamel</td><td>Roux blanc + lait</td></tr>
+          <tr><td>Velouté</td><td>Roux blond + fond blanc</td></tr>
+          <tr><td>Sauce espagnole</td><td>Roux brun + fond brun</td></tr>
+          <tr><td>Hollandaise</td><td>Émulsion chaude : jaunes d'œufs + beurre clarifié</td></tr>
+          <tr><td>Mayonnaise</td><td>Émulsion froide : jaune d'œuf + moutarde + huile</td></tr>
+        </table>
+        <h3>Les fonds</h3>
+        <p><strong>Fond blanc</strong> : os et garniture aromatique non colorés. <strong>Fond brun</strong> : os et garniture colorés au four avant le mouillage.</p>
+      </details>
+
+      <details class="card">
+        <summary>Les pâtes de base en pâtisserie</summary>
+        <ul>
+          <li><strong>Pâte brisée</strong> : tartes salées et sucrées, pâte friable.</li>
+          <li><strong>Pâte sablée</strong> : plus sucrée, texture sableuse (tartes, biscuits).</li>
+          <li><strong>Pâte feuilletée</strong> : détrempe + beurre, avec des tours (6 tours simples en général).</li>
+          <li><strong>Pâte à choux</strong> : panade desséchée puis œufs ajoutés (choux, éclairs, gougères).</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- ===================== QUIZ ===================== -->
+    <section id="quiz">
+      <h2>Quiz d'entraînement</h2>
+      <p class="muted">Clique sur une réponse : la correction s'affiche tout de suite.</p>
+      <div id="quiz-box"></div>
+      <div class="quiz-footer">
+        <p id="score" aria-live="polite"></p>
+        <button id="restart" type="button">Recommencer le quiz</button>
+      </div>
+    </section>
+
+    <!-- ===================== FICHES TECHNIQUES ===================== -->
+    <section id="fiches">
+      <h2>Fiches techniques</h2>
+      <p class="muted">Bouton « Imprimer » pour obtenir la fiche sur papier.</p>
+
+      <article class="card fiche">
+        <header class="fiche-head">
+          <h3>Pâte à choux</h3>
+          <span class="tag">≈ 30 choux</span>
+        </header>
+        <div class="fiche-grid">
+          <div>
+            <h4>Ingrédients</h4>
+            <ul>
+              <li>125 g d'eau</li>
+              <li>125 g de lait</li>
+              <li>100 g de beurre</li>
+              <li>150 g de farine</li>
+              <li>4 à 5 œufs (environ 250 g)</li>
+              <li>5 g de sel, 5 g de sucre</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Progression</h4>
+            <ol>
+              <li>Porter à ébullition l'eau, le lait, le beurre, le sel et le sucre.</li>
+              <li>Hors du feu, ajouter la farine d'un coup et mélanger.</li>
+              <li>Dessécher la panade sur le feu 1 à 2 min, jusqu'à ce qu'elle se décolle.</li>
+              <li>Incorporer les œufs un par un : la pâte doit former un ruban qui se casse.</li>
+              <li>Coucher à la poche, cuire à 180 °C environ 25 min sans ouvrir le four.</li>
+            </ol>
+          </div>
+        </div>
+        <button class="print" type="button">Imprimer</button>
+      </article>
+
+      <article class="card fiche">
+        <header class="fiche-head">
+          <h3>Crème pâtissière</h3>
+          <span class="tag">≈ 800 g</span>
+        </header>
+        <div class="fiche-grid">
+          <div>
+            <h4>Ingrédients</h4>
+            <ul>
+              <li>500 g de lait</li>
+              <li>100 g de jaunes d'œufs (environ 5)</li>
+              <li>125 g de sucre</li>
+              <li>50 g de poudre à crème ou de fécule</li>
+              <li>1 gousse de vanille</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Progression</h4>
+            <ol>
+              <li>Faire bouillir le lait avec la vanille fendue et grattée.</li>
+              <li>Blanchir les jaunes avec le sucre, puis ajouter la poudre à crème.</li>
+              <li>Verser une partie du lait chaud sur le mélange, remuer, remettre dans la casserole.</li>
+              <li>Cuire en fouettant : laisser bouillir 1 à 2 min.</li>
+              <li>Débarrasser sur une plaque filmée au contact et refroidir rapidement.</li>
+            </ol>
+          </div>
+        </div>
+        <button class="print" type="button">Imprimer</button>
+      </article>
+
+      <article class="card fiche">
+        <header class="fiche-head">
+          <h3>Sauce béchamel</h3>
+          <span class="tag">1 litre</span>
+        </header>
+        <div class="fiche-grid">
+          <div>
+            <h4>Ingrédients</h4>
+            <ul>
+              <li>1 L de lait</li>
+              <li>60 g de beurre</li>
+              <li>60 g de farine</li>
+              <li>Sel, poivre blanc, muscade</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Progression</h4>
+            <ol>
+              <li>Faire fondre le beurre, ajouter la farine : cuire le roux blanc 2 à 3 min sans coloration.</li>
+              <li>Laisser refroidir légèrement le roux.</li>
+              <li>Verser le lait bouillant en fouettant pour éviter les grumeaux.</li>
+              <li>Cuire 5 à 10 min à frémissement en remuant.</li>
+              <li>Assaisonner : sel, poivre blanc, une pointe de muscade.</li>
+            </ol>
+          </div>
+        </div>
+        <button class="print" type="button">Imprimer</button>
+      </article>
+
+      <article class="card fiche">
+        <header class="fiche-head">
+          <h3>Mayonnaise</h3>
+          <span class="tag">≈ 300 g</span>
+        </header>
+        <div class="fiche-grid">
+          <div>
+            <h4>Ingrédients</h4>
+            <ul>
+              <li>1 jaune d'œuf</li>
+              <li>5 g de moutarde</li>
+              <li>25 cl d'huile neutre</li>
+              <li>1 trait de vinaigre</li>
+              <li>Sel, poivre</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Progression</h4>
+            <ol>
+              <li>Tous les ingrédients à la même température (ambiante).</li>
+              <li>Mélanger le jaune, la moutarde, le sel et le poivre.</li>
+              <li>Monter en versant l'huile en filet, en fouettant sans arrêt.</li>
+              <li>Ajouter le vinaigre en fin de montage et rectifier l'assaisonnement.</li>
+              <li>Conserver au froid, à consommer le jour même.</li>
+            </ol>
+          </div>
+        </div>
+        <button class="print" type="button">Imprimer</button>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">MFR de Peyregoux · CAP Cuisine</div>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
