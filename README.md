@@ -12,3 +12,5 @@ Fiches de révision, quiz interactif et fiches techniques pour les apprentis.
 ## Mise en ligne
 
 Le site est publié avec GitHub Pages (Settings → Pages → branche `main`, dossier `/root`).
+
+Les fiches Word d'origine sont dans `sources/`. La procédure de mise à jour hebdomadaire est décrite dans `CLAUDE.md`.

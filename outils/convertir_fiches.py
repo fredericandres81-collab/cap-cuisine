@@ -109,6 +109,7 @@ def parse(path):
             flat0 = [" ".join(c) for c in first]
             # bandeau d'en-tête (logo + texte)
             if zone == "entete" and any("MFR Peyregoux" in x for x in flat0):
+                f["_bandeau"] = " ".join(flat0)
                 if not f["titre"]:
                     # nouveau modèle : le titre est dans le bandeau
                     for c in first:
@@ -181,6 +182,55 @@ def parse(path):
     return f
 
 
+MOIS_NUM = {"janvier": 1, "fevrier": 2, "février": 2, "mars": 3, "avril": 4, "mai": 5, "juin": 6, "juillet": 7,
+            "aout": 8, "août": 8, "septembre": 9, "octobre": 10, "novembre": 11, "decembre": 12, "décembre": 12}
+
+
+def date_tri(folder):
+    """'semaine 23 novembre cap 2' -> valeur de tri (année scolaire : septembre en premier)."""
+    m = re.search(r"(\d{1,2})\s+([a-zéû]+)", folder.lower())
+    if not m or m.group(2) not in MOIS_NUM:
+        return 0
+    mois = MOIS_NUM[m.group(2)]
+    return ((mois - 9) % 12) * 100 + int(m.group(1))
+
+
+def titre_semaine(folder):
+    """'semaine 23 novembre cap 2' -> 'Semaine 23 novembre — CAP 2'"""
+    t = re.sub(r"\s+", " ", folder).strip()
+    t = re.sub(r"\b0(\d)\b", r"\1", t)
+    t = re.sub(r"\s*\bcap\s*(\d)\b", lambda m: " — CAP " + m.group(1), t, flags=re.I)
+    return t[:1].upper() + t[1:]
+
+
+MOTS_THEMES = [  # testés dans cet ordre ; mots-clés séparés par des virgules
+    ("Coquillages et crustacés", "gambas, crevette, moule, huître, huitre, saint-jacques, écrevisse, homard, langoustine, crabe, tourteau"),
+    ("Poissons", "poisson, truite, saumon, sole, cabillaud, colin, merlan, lotte, bar , dorade, turbot, fumet, thon"),
+    ("Volailles", "poulet, volaille, canard, caneton, pintade, dinde, lapin, lapereau, magret, coq "),
+    ("Abats", "foie de veau, rognon, ris de veau, langue de"),
+    ("Viandes", "bœuf, boeuf, veau, porc, agneau, steak, entrecôte, entrecote, navarin, blanquette"),
+    ("Œufs", "œuf, oeuf, omelette"),
+    ("Potages", "potage, soupe, velouté, veloute, consommé, consomme, bisque"),
+    ("Desserts", "dessert, bavarois, tarte, gâteau, gateau, crème brûlée, mousse au chocolat, charlotte, entremets, "
+                 "sorbet, glace, choux, éclair, eclair, biscuit, génoise, genoise, crêpe, crepe, macaron, tiramisu, "
+                 "paris-brest, chantilly, sablé"),
+    ("Garnitures d'accompagnement", "pommes de terre, purée, puree, riz , gratin, légumes, legumes, pâtes, pates"),
+]
+
+
+def deviner_theme(fic):
+    """Thème d'une nouvelle fiche : d'abord le bandeau (« Fiche technique — Desserts »), sinon des mots-clés."""
+    band = fic.get("_bandeau", "")
+    for theme in CATS.values():
+        if theme.lower() in band.lower():
+            return theme
+    titre = (fic.get("titre", "") + " " + fic.get("description", "")).lower()
+    for theme, mots in MOTS_THEMES:
+        if any(m.strip(", ") and m.lstrip() in titre for m in mots.split(",")):
+            return theme
+    return "Hors-d'œuvre chauds"
+
+
 def main():
     fiches, used_slugs = [], set()
     schemas_dir = os.path.join(OUT, "schemas")
@@ -211,31 +261,53 @@ def main():
             m = re.match(r"(\d+) - ", name)
             add(os.path.join(p, name), cat, int(m.group(1)) if m else 99)
 
-    sem = os.path.join(DONNEES, "semaine 23 novembre cap 2")
-    for name, cat in NEW_FORMAT.items():
-        fic = add(os.path.join(sem, name), cat, 100)
-        pdf = os.path.join(sem, name.replace(".docx", ".pdf"))
-        if os.path.exists(pdf):
-            shutil.copy(pdf, os.path.join(schemas_dir, fic["id"] + "-fiche.pdf"))
-            fic["pdf"] = "schemas/" + fic["id"] + "-fiche.pdf"
-        if "Papillotes" in name:
-            shutil.copy(os.path.join(sem, "Pliage_papillote_rectangulaire.mp4"),
-                        os.path.join(media_dir, "pliage-papillote.mp4"))
-            fic["video"] = {"src": "media/pliage-papillote.mp4", "titre": "Pliage d'une papillote rectangulaire"}
-
-    by_file = {f["fichier"]: f["id"] for f in fiches}
+    # ---------- Fiches des semaines (dossier "fiches techniques données") ----------
+    # Chaque sous-dossier = une semaine ou un repas. Une fiche déjà présente dans les thèmes
+    # est simplement référencée ; une fiche nouvelle est ajoutée au catalogue.
+    by_file = {}
+    for f in fiches:
+        by_file[f["fichier"]] = f["id"]
+        by_file[re.sub(r"_\d+$", "", f["fichier"])] = f["id"]
     semaines = []
-    for folder, label in (("semaine 23 novembre cap 2", "Semaine du 23 novembre — CAP 2"),
-                          ("repas du 05 novembre cap 1", "Repas du 5 novembre — CAP 1")):
+    for folder in sorted(os.listdir(DONNEES)):
+        sem = os.path.join(DONNEES, folder)
+        if not os.path.isdir(sem):
+            continue
         ids = []
-        for name in sorted(os.listdir(os.path.join(DONNEES, folder))):
-            base = os.path.splitext(name)[0]
-            if name.endswith(".docx"):
-                key = base.replace("_8_couverts", "_8_couverts_1") if base not in by_file else base
-                fid = by_file.get(base) or by_file.get(key)
-                if fid and fid not in ids:
-                    ids.append(fid)
-        semaines.append({"titre": label, "fiches": ids})
+        names = sorted(os.listdir(sem))
+        for name in names:
+            base, ext = os.path.splitext(name)
+            if ext.lower() != ".docx" or base.lower().startswith("schema"):
+                continue
+            fid = by_file.get(base) or by_file.get(re.sub(r"_\d+$", "", base))
+            if not fid:
+                path = os.path.join(sem, name)
+                cat = NEW_FORMAT.get(name) or deviner_theme(parse(path))
+                fic = add(path, cat, 100)
+                fid = by_file[base] = fic["id"]
+                pdf = os.path.join(sem, base + ".pdf")
+                if os.path.exists(pdf):
+                    shutil.copy(pdf, os.path.join(schemas_dir, fid + "-fiche.pdf"))
+                    fic["pdf"] = "schemas/" + fid + "-fiche.pdf"
+            if fid not in ids:
+                ids.append(fid)
+        # vidéos : rattachées à la fiche de la semaine dont le titre partage un mot
+        for name in names:
+            base, ext = os.path.splitext(name)
+            if ext.lower() not in (".mp4", ".webm", ".mov"):
+                continue
+            mots = {m for m in re.split(r"[^a-zà-ÿ]+", base.lower()) if len(m) > 4}
+            cible = next((fiche for fiche in fiches if fiche["id"] in ids and
+                          any(m.rstrip("s") in fiche["titre"].lower() for m in mots)), None)
+            if cible:
+                dest = slugify(base) + ext.lower()
+                shutil.copy(os.path.join(sem, name), os.path.join(media_dir, dest))
+                cible["video"] = {"src": "media/" + dest, "titre": base.replace("_", " ")}
+        if ids:
+            semaines.append({"titre": titre_semaine(folder), "fiches": ids, "_tri": date_tri(folder)})
+    semaines.sort(key=lambda x: x.pop("_tri"), reverse=True)
+    for f in fiches:
+        f.pop("_bandeau", None)
 
     data = {"themes": list(CATS.values()), "semaines": semaines, "fiches": fiches}
     with open(os.path.join(OUT, "fiches-data.js"), "w", encoding="utf-8") as fh:
