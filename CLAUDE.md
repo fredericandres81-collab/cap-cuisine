@@ -14,7 +14,9 @@ lui répondre simplement, sans jargon.
 - Fichiers EN CLAIR, jamais commités (`.gitignore`) : `fiches-data.js`, `schemas/`, `media/`, `sources/` (fiches Word).
 - `outils/convertir_fiches.py` : convertit `sources/` en `fiches-data.js`, `schemas/` (PDF) et `media/` (vidéos).
 - `outils/liens_videos.json` : liens vers des vidéos sur Internet, par fiche (id → liste {titre, source, url}),
-  fusionnés par le convertisseur. Vidéos choisies sur titre/chaîne (non visionnées) : à faire valider par le formateur.
+  fusionnés par le convertisseur. **Consigne du formateur : toujours lui DEMANDER AVANT d'ajouter des liens vidéo.**
+  Lui proposer la liste (titre, chaîne, lien) et n'ajouter que les vidéos qu'il valide. Ne jamais en ajouter de
+  sa propre initiative, même lors de la mise à jour hebdomadaire.
 - `outils/chiffrer.py` : `publier CODE` chiffre ces fichiers dans `protege/` (dont l'archive `sources.tar.gz.enc`) ;
   `extraire CODE` restaure `sources/` depuis l'archive chiffrée. Chiffrement déterministe : un fichier inchangé
   garde exactement le même `.enc` (pas de gonflement du dépôt).
