@@ -16,8 +16,8 @@ lui répondre simplement, sans jargon.
 - `outils/liens_videos.json` : liens vers des vidéos sur Internet, par fiche (id → liste {titre, source, url}),
   fusionnés par le convertisseur. **Consigne du formateur : toujours lui DEMANDER AVANT d'ajouter des liens vidéo.**
   Lui proposer la liste (titre, chaîne, lien) et n'ajouter que les vidéos qu'il valide. Ne jamais en ajouter de
-  sa propre initiative, même lors de la mise à jour hebdomadaire. Sources acceptées : **Afpa** et **Chefs en ligne**
-  (chaînes YouTube « Afpa » et « Chefsenligne ») uniquement ; vérifier la chaîne de chaque vidéo avant de la proposer.
+  sa propre initiative, même lors de la mise à jour hebdomadaire. Sources acceptées : **Afpa**, **Chefs en ligne** et
+  **Eloy Spinnler** (chaînes YouTube « Afpa », « Chefsenligne » et « Eloy Spinnler » @eloyspinnler) uniquement ; vérifier la chaîne de chaque vidéo avant de la proposer.
 - `outils/chiffrer.py` : `publier CODE` chiffre ces fichiers dans `protege/` (dont l'archive `sources.tar.gz.enc`) ;
   `extraire CODE` restaure `sources/` depuis l'archive chiffrée. Chiffrement déterministe : un fichier inchangé
   garde exactement le même `.enc` (pas de gonflement du dépôt).
@@ -69,7 +69,8 @@ Il dépose une copie du dossier de la semaine sur son Google Drive, dans le doss
 
 ## À faire (demandé par le formateur)
 
-- **Vidéos Afpa / Chefs en ligne pour les 197 fiches** : consulter les catalogues plutôt que chercher fiche par fiche
-  (série Afpa « 101 techniques de base de cuisine » sur YouTube ; programmes classés par thème sur chefsenligne.com),
+- **Vidéos Afpa / Chefs en ligne / Eloy Spinnler pour les 197 fiches** : consulter les catalogues plutôt que chercher
+  fiche par fiche (série Afpa « 101 techniques de base de cuisine » sur YouTube ; programmes classés par thème sur
+  chefsenligne.com ; vidéos de la chaîne youtube.com/@eloyspinnler),
   les comparer aux fiches, puis **proposer la liste des correspondances au formateur** et n'ajouter que ce qu'il
   valide dans `outils/liens_videos.json`. Le quota quotidien de recherche web (Firecrawl) est limité : économiser.
