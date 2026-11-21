@@ -1,41 +1,5 @@
 {
-  "_aide": "Vidéos sur Internet par fiche (id de la fiche → liste). Choisies sur le titre et la chaîne : à valider par le formateur.",
-  "soles-ou-truites-meuniere": [
-    {
-      "titre": "Réussir une sole meunière",
-      "source": "Julie Cuisine (YouTube)",
-      "url": "https://www.youtube.com/watch?v=d1VEbDzEodk"
-    },
-    {
-      "titre": "Cuire une sole meunière à la poêle",
-      "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=tZ2EzgWOq2g"
-    }
-  ],
-  "riz-pilaf-ou-pilaw-nature-et-creole": [
-    {
-      "titre": "Cuisson du riz pilaf",
-      "source": "Afpa (YouTube)",
-      "url": "https://www.youtube.com/watch?v=CwyV5-FwBBk"
-    },
-    {
-      "titre": "Technique : le riz pilaf",
-      "source": "L'atelier des Chefs (YouTube)",
-      "url": "https://www.youtube.com/watch?v=hSg8qI3hcro"
-    }
-  ],
-  "oeufs-a-la-neige": [
-    {
-      "titre": "Œufs à la neige et crème anglaise, par un chef pâtissier",
-      "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=tYORUbIVz0E"
-    },
-    {
-      "titre": "Œufs à la neige et crème anglaise à la vanille",
-      "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=yQXz9_pNKHk"
-    }
-  ],
+  "_aide": "Vidéos sur Internet par fiche (id de la fiche → liste). Uniquement Afpa et Chefs en ligne, validées par le formateur. Toujours demander avant d'en ajouter.",
   "potage-saint-germain-aux-croutons": [
     {
       "titre": "Réaliser un potage passé de légumes secs",
@@ -46,6 +10,20 @@
       "titre": "Potage Saint-Germain aux croûtons",
       "source": "Chefs en ligne (YouTube)",
       "url": "https://www.youtube.com/watch?v=_7E_j_TjHMM"
+    }
+  ],
+  "riz-pilaf-ou-pilaw-nature-et-creole": [
+    {
+      "titre": "Cuisson du riz pilaf",
+      "source": "Afpa (YouTube)",
+      "url": "https://www.youtube.com/watch?v=CwyV5-FwBBk"
+    }
+  ],
+  "oeufs-a-la-neige": [
+    {
+      "titre": "Œufs à la neige crème anglaise",
+      "source": "Chefs en ligne (YouTube)",
+      "url": "https://www.youtube.com/watch?v=eYRxz3P__4o"
     }
   ]
 }

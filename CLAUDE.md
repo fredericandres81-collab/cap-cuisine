@@ -16,7 +16,8 @@ lui répondre simplement, sans jargon.
 - `outils/liens_videos.json` : liens vers des vidéos sur Internet, par fiche (id → liste {titre, source, url}),
   fusionnés par le convertisseur. **Consigne du formateur : toujours lui DEMANDER AVANT d'ajouter des liens vidéo.**
   Lui proposer la liste (titre, chaîne, lien) et n'ajouter que les vidéos qu'il valide. Ne jamais en ajouter de
-  sa propre initiative, même lors de la mise à jour hebdomadaire.
+  sa propre initiative, même lors de la mise à jour hebdomadaire. Sources acceptées : **Afpa** et **Chefs en ligne**
+  (chaînes YouTube « Afpa » et « Chefsenligne ») uniquement ; vérifier la chaîne de chaque vidéo avant de la proposer.
 - `outils/chiffrer.py` : `publier CODE` chiffre ces fichiers dans `protege/` (dont l'archive `sources.tar.gz.enc`) ;
   `extraire CODE` restaure `sources/` depuis l'archive chiffrée. Chiffrement déterministe : un fichier inchangé
   garde exactement le même `.enc` (pas de gonflement du dépôt).
