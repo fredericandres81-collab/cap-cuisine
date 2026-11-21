@@ -267,3 +267,11 @@ body.vue-fiche .site-header .lead { display: none; }
 .verrou input { flex: 1; min-width: 0; font: inherit; font-size: 1.1rem; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; }
 .verrou input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 .msg-code { min-height: 1.4em; margin: 10px 0 0; color: var(--ko); font-weight: 600; }
+
+/* Liens vers des vidéos sur Internet */
+.liens-videos { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.lien-video { display: flex; gap: 12px; align-items: center; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; text-decoration: none; color: var(--ink); }
+.lien-video:hover, .lien-video:focus-visible { border-color: var(--accent); }
+.lien-video-icone { flex: none; width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; font-size: .95rem; }
+.lien-video strong { display: block; line-height: 1.3; }
+.lien-video-source { display: block; margin-top: 3px; line-height: 1.3; }

@@ -236,6 +236,16 @@
       vue.append(section("Vidéo", el("p", { class: "muted", text: f.video.titre }), video));
     }
 
+    if (f.videosWeb && f.videosWeb.length) {
+      const ul = el("ul", { class: "liens-videos" });
+      f.videosWeb.forEach(v => ul.append(el("li", {},
+        el("a", { href: v.url, target: "_blank", rel: "noopener noreferrer", class: "lien-video" },
+          el("span", { class: "lien-video-icone", "aria-hidden": "true", text: "▶" }),
+          el("span", {}, el("strong", { text: v.titre }), el("span", { class: "muted small lien-video-source", text: v.source || "" }))))));
+      vue.append(section("Vidéos sur Internet", ul,
+        el("p", { class: "note", text: "Vidéos externes, pour voir les gestes. En cas de différence, c'est la fiche technique qui fait foi." })));
+    }
+
     // Denrées + calcul des quantités
     const couverts = el("input", { type: "number", min: "1", max: "200", value: String(base), id: "couverts", inputmode: "numeric" });
     const tbody = el("tbody");

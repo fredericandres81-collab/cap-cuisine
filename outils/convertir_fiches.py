@@ -311,6 +311,16 @@ def main():
     for f in fiches:
         f.pop("_bandeau", None)
 
+    # Liens vers des vidéos sur Internet (outils/liens_videos.json)
+    liens = os.path.join(os.path.dirname(os.path.abspath(__file__)), "liens_videos.json")
+    if os.path.exists(liens):
+        par_id = {f["id"]: f for f in fiches}
+        for fid, videos in json.load(open(liens, encoding="utf-8")).items():
+            if fid in par_id:
+                par_id[fid]["videosWeb"] = videos
+            elif not fid.startswith("_"):
+                print("ATTENTION : fiche inconnue dans liens_videos.json :", fid)
+
     data = {"themes": list(CATS.values()), "semaines": semaines, "fiches": fiches}
     with open(os.path.join(OUT, "fiches-data.js"), "w", encoding="utf-8") as fh:
         fh.write("// Fichier généré automatiquement à partir des fiches Word. Ne pas modifier à la main.\n")

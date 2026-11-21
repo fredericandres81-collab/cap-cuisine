@@ -1,0 +1,19 @@
+{
+  "_aide": "Vidéos sur Internet par fiche (id de la fiche → liste). Choisies sur le titre et la chaîne : à valider par le formateur.",
+  "soles-ou-truites-meuniere": [
+    {"titre": "Réussir une sole meunière", "source": "Julie Cuisine (YouTube)", "url": "https://www.youtube.com/watch?v=d1VEbDzEodk"},
+    {"titre": "Cuire une sole meunière à la poêle", "source": "YouTube", "url": "https://www.youtube.com/watch?v=tZ2EzgWOq2g"}
+  ],
+  "potage-saint-germain-aux-croutons": [
+    {"titre": "Potage Saint-Germain", "source": "YouTube, en français", "url": "https://www.youtube.com/watch?v=mcCl7SxcZ3E"},
+    {"titre": "Potage Saint-Germain, classique d'école de cuisine", "source": "French Cooking Academy (YouTube, en anglais)", "url": "https://www.youtube.com/watch?v=VHsF-bK9xsg"}
+  ],
+  "riz-pilaf-ou-pilaw-nature-et-creole": [
+    {"titre": "Cuisson du riz pilaf", "source": "Afpa (YouTube)", "url": "https://www.youtube.com/watch?v=CwyV5-FwBBk"},
+    {"titre": "Technique : le riz pilaf", "source": "L'atelier des Chefs (YouTube)", "url": "https://www.youtube.com/watch?v=hSg8qI3hcro"}
+  ],
+  "oeufs-a-la-neige": [
+    {"titre": "Œufs à la neige et crème anglaise, par un chef pâtissier", "source": "YouTube", "url": "https://www.youtube.com/watch?v=tYORUbIVz0E"},
+    {"titre": "Œufs à la neige et crème anglaise à la vanille", "source": "YouTube", "url": "https://www.youtube.com/watch?v=yQXz9_pNKHk"}
+  ]
+}

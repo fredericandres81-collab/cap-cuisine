@@ -10,7 +10,7 @@ ils sont listés dans .gitignore. Seuls les fichiers .enc et protege/cle.json so
 Format : clé = PBKDF2-SHA256(code, sel, ITER) ; chaque fichier .enc = IV (12 octets) + AES-256-GCM(données).
 Le navigateur (fiches.js) refait le même calcul avec WebCrypto.
 """
-import base64, io, json, os, sys, tarfile, glob, shutil
+import base64, gzip, hashlib, hmac, io, json, os, sys, tarfile, glob, shutil
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from cryptography.hazmat.primitives import hashes
@@ -27,8 +27,16 @@ def cle(code, sel):
 
 
 def chiffrer(k, data):
-    iv = os.urandom(12)
+    # IV déterministe (dérivé du contenu) : un fichier inchangé donne exactement le même .enc,
+    # donc git ne le renvoie pas à chaque publication. Seuls des contenus identiques partagent un IV.
+    iv = hmac.new(k, data, hashlib.sha256).digest()[:12]
     return iv + AESGCM(k).encrypt(iv, data, None)
+
+
+def ecrire_si_change(chemin, contenu):
+    if os.path.exists(chemin) and open(chemin, "rb").read() == contenu:
+        return
+    open(chemin, "wb").write(contenu)
 
 
 def dechiffrer(k, blob):
@@ -66,19 +74,32 @@ def publier(code):
     txt = open(src, encoding="utf-8").read()
     json_txt = txt[txt.index("=") + 1:].strip().rstrip(";")
     json.loads(json_txt)  # vérification
-    open(os.path.join(PROT, "fiches-data.enc"), "wb").write(chiffrer(k, json_txt.encode("utf-8")))
+    ecrire_si_change(os.path.join(PROT, "fiches-data.enc"), chiffrer(k, json_txt.encode("utf-8")))
     # 2. schémas PDF et vidéos
     for dossier in ("schemas", "media"):
         dst = os.path.join(PROT, dossier)
-        shutil.rmtree(dst, ignore_errors=True)
-        os.makedirs(dst)
+        os.makedirs(dst, exist_ok=True)
+        attendus = set()
         for f in sorted(glob.glob(os.path.join(RACINE, dossier, "*"))):
-            open(os.path.join(dst, os.path.basename(f) + ".enc"), "wb").write(chiffrer(k, open(f, "rb").read()))
+            nom = os.path.basename(f) + ".enc"
+            attendus.add(nom)
+            ecrire_si_change(os.path.join(dst, nom), chiffrer(k, open(f, "rb").read()))
+        for vieux in set(os.listdir(dst)) - attendus:
+            os.remove(os.path.join(dst, vieux))
     # 3. archive des fiches Word d'origine
+    # archive reproductible (ordre trié, dates et propriétaires neutres) : identique si rien n'a changé
     buf = io.BytesIO()
-    with tarfile.open(fileobj=buf, mode="w:gz") as tar:
-        tar.add(os.path.join(RACINE, "sources"), arcname="sources")
-    open(os.path.join(PROT, "sources.tar.gz.enc"), "wb").write(chiffrer(k, buf.getvalue()))
+    with gzip.GzipFile(fileobj=buf, mode="wb", mtime=0) as gz, tarfile.open(fileobj=gz, mode="w") as tar:
+        base = os.path.join(RACINE, "sources")
+        for dossier, sous, fichiers in os.walk(base):
+            sous.sort()
+            for nom in sorted(fichiers):
+                chemin = os.path.join(dossier, nom)
+                info = tar.gettarinfo(chemin, arcname=os.path.relpath(chemin, RACINE))
+                info.mtime, info.uid, info.gid, info.uname, info.gname, info.mode = 0, 0, 0, "", "", 0o644
+                with open(chemin, "rb") as fh:
+                    tar.addfile(info, fh)
+    ecrire_si_change(os.path.join(PROT, "sources.tar.gz.enc"), chiffrer(k, buf.getvalue()))
     n = len(glob.glob(os.path.join(PROT, "*", "*.enc")))
     print(f"chiffré : fiches-data.enc, {n} schémas/vidéos, sources.tar.gz.enc")
 

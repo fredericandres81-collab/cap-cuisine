@@ -13,8 +13,11 @@ lui répondre simplement, sans jargon.
   le navigateur déchiffre après saisie du code.
 - Fichiers EN CLAIR, jamais commités (`.gitignore`) : `fiches-data.js`, `schemas/`, `media/`, `sources/` (fiches Word).
 - `outils/convertir_fiches.py` : convertit `sources/` en `fiches-data.js`, `schemas/` (PDF) et `media/` (vidéos).
+- `outils/liens_videos.json` : liens vers des vidéos sur Internet, par fiche (id → liste {titre, source, url}),
+  fusionnés par le convertisseur. Vidéos choisies sur titre/chaîne (non visionnées) : à faire valider par le formateur.
 - `outils/chiffrer.py` : `publier CODE` chiffre ces fichiers dans `protege/` (dont l'archive `sources.tar.gz.enc`) ;
-  `extraire CODE` restaure `sources/` depuis l'archive chiffrée.
+  `extraire CODE` restaure `sources/` depuis l'archive chiffrée. Chiffrement déterministe : un fichier inchangé
+  garde exactement le même `.enc` (pas de gonflement du dépôt).
 
 **Le code d'accès n'est écrit nulle part dans le dépôt : le demander au formateur à chaque session.** Ne jamais
 l'inscrire dans un fichier, un commit ou un message de commit.
