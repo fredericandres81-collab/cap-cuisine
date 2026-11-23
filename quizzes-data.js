@@ -320,6 +320,23 @@ window.QUIZZES = [
     ]
   },
   {
+    id: "abats",
+    titre: "Les abats",
+    matiere: "Connaissance des produits",
+    questions: [
+      { q: "Lequel de ces abats est un abat ROUGE ?", choix: ["Le ris de veau", "La tête de veau", "Le foie", "Les tripes"], bonne: 2, explication: "Abats rouges : foie, cœur, rognons, langue, joues. Abats blancs : ris, cervelle, tête, pieds, tripes." },
+      { q: "Lequel de ces abats est un abat BLANC ?", choix: ["Le cœur", "Les rognons", "Le ris de veau", "La langue"], bonne: 2, explication: "Les abats blancs sont généralement blanchis avant d'être cuisinés." },
+      { q: "Le ris de veau, c'est…", choix: ["Le foie du veau", "Le thymus, une glande du jeune animal", "Le rein", "La cervelle"], bonne: 1, explication: "Il n'existe que chez le jeune animal (veau, agneau) : il disparaît à l'âge adulte." },
+      { q: "« Dégorger » un ris ou une cervelle, c'est…", choix: ["Le faire griller", "Le laisser tremper dans l'eau froide pour éliminer le sang", "Le saler", "Le congeler"], bonne: 1, explication: "On renouvelle l'eau plusieurs fois, jusqu'à ce qu'elle reste claire." },
+      { q: "Après avoir blanchi des ris de veau, on les…", choix: ["Sert tout de suite", "Rafraîchit, épluche, puis met sous presse", "Fait bouillir 3 heures", "Mixe"], bonne: 1, explication: "La mise sous presse leur donne une forme régulière et une texture plus ferme." },
+      { q: "Comment prépare-t-on une langue de bœuf ?", choix: ["Grillée crue en tranches fines", "Pochée longuement, puis on retire la peau", "Frite", "Crue en tartare"], bonne: 1, explication: "Une fois pochée, la peau épaisse se retire facilement. On la sert souvent avec une sauce piquante." },
+      { q: "Comment cuit-on habituellement le foie de veau ?", choix: ["Longuement, en ragoût", "Rapidement, sauté et gardé rosé", "Bouilli 2 heures", "Cru"], bonne: 1, explication: "On retire d'abord la fine peau qui l'entoure. Trop cuit, il devient dur et sec." },
+      { q: "Les tripes à la mode de Caen sont préparées avec…", choix: ["L'estomac (panse) du bœuf", "Le foie de porc", "La langue de veau", "Le cœur d'agneau"], bonne: 0, explication: "Elles cuisent très longuement. L'andouillette, elle, est faite avec des tripes de porc." },
+      { q: "Pourquoi la cervelle des bovins adultes est-elle interdite à la vente ?", choix: ["Pour son goût trop fort", "À cause du risque de maladie de la vache folle (ESB)", "Parce qu'elle est trop chère", "Elle ne l'est pas"], bonne: 1, explication: "Certains abats de bovins sont classés « à risque » par la réglementation. On utilise par exemple de la cervelle d'agneau ou de porc." },
+      { q: "Comment conserve-t-on les abats ?", choix: ["À température ambiante", "Au froid (0 à +3 °C), et on les consomme très rapidement", "Une semaine au réfrigérateur sans problème", "Dans l'eau tiède"], bonne: 1, explication: "Les abats sont très périssables : ils ont une DLC très courte." }
+    ]
+  },
+  {
     id: "fromages",
     titre: "Fromages",
     matiere: "Connaissance des produits",
