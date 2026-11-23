@@ -291,6 +291,18 @@ window.QUIZ_RAPPELS = {
     "Ordre de nettoyage d'une chambre : aérer, débarrasser (poubelles, plateaux), défaire et refaire le lit, dépoussiérer du haut vers le bas, nettoyer la salle de bains, puis le sol en dernier, et contrôler l'ensemble.",
     "Une chambre « à blanc » doit être parfaite pour le client suivant : linge entièrement changé, salle de bains désinfectée, minibar et produits d'accueil complétés, objets oubliés remis à la réception."
   ],
+  "cshcr-fromages": [
+    "Un plateau équilibré compte 3 à 5 fromages de familles différentes (chèvre, pâte molle à croûte fleurie, pâte pressée, croûte lavée, pâte persillée) et, si possible, de laits différents (vache, chèvre, brebis).",
+    "On sort les fromages du froid 30 min à 1 h avant le service, sous une cloche ou un film, pour qu'ils soient à température ambiante. Un fromage trop froid paraît fade et sa pâte reste dure.",
+    "Ordre de présentation et de dégustation : du plus doux au plus fort, par exemple chèvre frais, pâte pressée, croûte fleurie, croûte lavée, pâte persillée. Sur le plateau, on les dispose souvent dans le sens des aiguilles d'une montre.",
+    "Un couteau par famille (ou au minimum un pour les persillés et un pour les autres) évite de transmettre les goûts et les moisissures d'un fromage à l'autre. Le couteau à fromage a une lame ajourée et deux pointes pour piquer la part.",
+    "Les fromages ronds (camembert, reblochon, brie) se découpent en parts depuis le centre, comme un gâteau : chaque part a la même proportion de cœur et de croûte. On ne coupe jamais la « pointe » du brie pour soi.",
+    "Les pâtes persillées (roquefort, bleu d'Auvergne, fourme d'Ambert) se découpent en biais, du cœur vers l'extérieur, avec un couteau à lame fine ou un fil. Le cœur, plus doux, est ainsi partagé entre tous.",
+    "Les bûches et crottins de chèvre se coupent en rondelles. Les pâtes pressées en morceau (comté, beaufort) se coupent en tranches ou en bâtonnets, en gardant un peu de croûte pour la tenue.",
+    "Accords vins-fromages classiques : chèvre et sancerre blanc, roquefort et sauternes, comté et vin jaune du Jura, munster et gewurztraminer, époisses et bourgogne rouge. On marie souvent un fromage et un vin de la même région.",
+    "Accompagnements : pain de campagne, pain aux noix ou aux fruits secs, beurre pour certains fromages (roquefort), noix, raisins, confiture de cerises noires avec l'ossau-iraty, miel avec certains chèvres.",
+    "Après le service, les fromages entamés sont filmés à la coupe (pas la croûte), étiquetés et rangés au froid dans un bac à part, pour que leurs odeurs ne passent pas aux autres produits."
+  ],
   "psr-production": [
     "Cuisine centrale : elle produit en grande quantité pour plusieurs restaurants satellites (cantines, hôpitaux, entreprises). Les satellites réceptionnent les plats, les remettent en température et les distribuent.",
     "Liaison chaude : les plats sont cuits puis maintenus à +63 °C minimum, transportés en conteneurs isothermes, jusqu'au service. On contrôle et on note la température à la livraison et au service.",

@@ -425,6 +425,24 @@ window.QUIZZES = [
     ]
   },
 
+  {
+    id: "cshcr-fromages",
+    titre: "Le service des fromages",
+    matiere: "CAP CSHCR",
+    questions: [
+      { q: "Combien de fromages propose-t-on en général sur un plateau ?", choix: ["1 seul", "3 à 5, de familles différentes", "Une quinzaine", "Uniquement des pâtes pressées"], bonne: 1, explication: "Un plateau varié permet au client de goûter plusieurs familles et plusieurs laits." },
+      { q: "Combien de temps avant le service sort-on les fromages du froid ?", choix: ["Au dernier moment", "30 min à 1 h avant", "La veille", "3 heures avant"], bonne: 1, explication: "Trop froid, un fromage ne développe pas ses arômes." },
+      { q: "Dans quel ordre dispose-t-on les fromages sur le plateau et dans l'assiette ?", choix: ["Du plus fort au plus doux", "Du plus doux au plus fort", "Par taille", "Par prix"], bonne: 1, explication: "On finit par les plus forts (croûtes lavées, persillés) pour ne pas écraser les goûts délicats." },
+      { q: "Pourquoi prévoit-on un couteau par famille de fromages ?", choix: ["Pour faire joli", "Pour ne pas mélanger les goûts et les moisissures", "Parce que c'est moins cher", "Ce n'est pas utile"], bonne: 1, explication: "Un couteau passé dans un bleu donnerait son goût au chèvre." },
+      { q: "Comment découpe-t-on un camembert ?", choix: ["En tranches parallèles", "En parts depuis le centre, comme un gâteau", "En dés", "On ne le découpe pas"], bonne: 1, explication: "Chaque part a ainsi du cœur et de la croûte." },
+      { q: "Comment découpe-t-on un roquefort ?", choix: ["En biais, pour que chaque part ait du cœur et de la croûte", "En rondelles", "En carrés", "En retirant le bleu"], bonne: 0, explication: "Le cœur d'une pâte persillée est plus doux que le bord : la découpe en biais est plus juste pour chaque convive." },
+      { q: "Comment découpe-t-on une bûche de chèvre ?", choix: ["En rondelles", "En parts depuis le centre", "En biais", "En lamelles dans la longueur"], bonne: 0, explication: "Les crottins se coupent aussi en rondelles ou en deux." },
+      { q: "Quel accord vin-fromage est un classique ?", choix: ["Roquefort et sauternes", "Camembert et champagne rosé sucré", "Comté et soda", "Chèvre et porto rouge uniquement"], bonne: 0, explication: "Le liquoreux équilibre le sel et la force du bleu. Autres classiques : chèvre et sancerre, comté et vin jaune." },
+      { q: "Quelle confiture accompagne traditionnellement l'ossau-iraty ?", choix: ["Confiture de fraises", "Confiture de cerises noires", "Confiture d'oranges amères", "Confiture de lait"], bonne: 1, explication: "C'est un fromage de brebis du Pays basque, servi avec la confiture de cerises noires d'Itxassou." },
+      { q: "Après le service, que fait-on des fromages restants ?", choix: ["On les laisse sur le plateau en salle", "On les filme à la coupe et on les range au froid, à part", "On les jette tous", "On les congèle"], bonne: 1, explication: "On les isole des autres produits pour éviter que les odeurs se transmettent." }
+    ]
+  },
+
   // ===================== CAP PSR =====================
   {
     id: "psr-production",
