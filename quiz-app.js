@@ -43,7 +43,10 @@
 
   // ---------- Déroulement d'un quiz ----------
   function lancer(quiz) {
-    const questions = melanger(quiz.questions).map(q => {
+    const rappels = (window.QUIZ_RAPPELS || {})[quiz.id] || [];
+    const boiteRappel = q => q.rappel ? el("div", { class: "rappel" },
+      el("p", { class: "rappel-titre", text: "📘 Rappel de cours" }), el("p", { text: q.rappel })) : null;
+    const questions = melanger(quiz.questions.map((q, n) => ({ ...q, rappel: rappels[n] }))).map(q => {
       const ordre = melanger(q.choix.map((c, i) => i));
       return { ...q, ordre };
     });
@@ -70,6 +73,8 @@
           const juste = idx === q.bonne;
           if (juste) score++; else { b.classList.add("ko"); erreurs.push(q); }
           carte.append(el("p", { class: "explain " + (juste ? "explain-ok" : "explain-ko"), text: (juste ? "✔ Bonne réponse. " : "✘ Raté. ") + q.explication }));
+          const r = boiteRappel(q);
+          if (r) carte.append(r);
           suivant.hidden = false;
           suivant.focus();
         });
@@ -100,7 +105,8 @@
         erreurs.forEach(q => jeu.append(el("div", { class: "card" },
           el("p", { class: "q-texte", text: q.q }),
           el("p", { class: "bonne-rep", text: "Bonne réponse : " + q.choix[q.bonne] }),
-          el("p", { class: "explain", text: q.explication }))));
+          el("p", { class: "explain", text: q.explication }),
+          boiteRappel(q))));
       }
       window.scrollTo(0, 0);
     }
