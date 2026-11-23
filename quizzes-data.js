@@ -197,5 +197,144 @@ window.QUIZZES = [
       { q: "Combien de jours de congés payés acquiert-on par mois de travail ?", choix: ["1 jour", "2 jours", "2,5 jours ouvrables", "5 jours"], bonne: 2, explication: "Soit 30 jours ouvrables (5 semaines) par an pour un temps plein." },
       { q: "Le salaire net, c'est…", choix: ["Le salaire avant les cotisations", "La somme réellement perçue après les cotisations sociales", "Le salaire du patron", "Le salaire avec les pourboires"], bonne: 1, explication: "Le salaire brut est la rémunération avant déduction des cotisations." }
     ]
+  },
+
+  // ===================== CONNAISSANCE DES PRODUITS =====================
+  {
+    id: "viandes-boucherie",
+    titre: "Viandes de boucherie",
+    matiere: "Connaissance des produits",
+    questions: [
+      { q: "Quel est le morceau de bœuf le plus tendre ?", choix: ["Le jarret", "Le filet", "Le paleron", "La macreuse"], bonne: 1, explication: "Le filet est un morceau de 1re catégorie, pour les cuissons rapides (rôtir, sauter, griller)." },
+      { q: "Le paleron, la macreuse et le jarret de bœuf se cuisent plutôt…", choix: ["Rapidement, à la poêle", "Longuement : braisés, bouillis ou en ragoût", "Crus en tartare", "Grillés au barbecue"], bonne: 1, explication: "Ce sont des morceaux riches en tissu conjonctif : une cuisson longue les attendrit (pot-au-feu, bourguignon)." },
+      { q: "Quel morceau de veau utilise-t-on souvent pour la blanquette ?", choix: ["La noix", "Le filet mignon", "Le tendron et l'épaule", "La côte première"], bonne: 2, explication: "La blanquette demande des morceaux moelleux qui supportent une cuisson longue : tendron, épaule, flanchet." },
+      { q: "Le gigot provient…", choix: ["De la cuisse de l'agneau ou du mouton", "De l'épaule du porc", "Du dos du veau", "De la poitrine du bœuf"], bonne: 0, explication: "Le gigot, c'est la cuisse de l'agneau ou du mouton." },
+      { q: "Les escalopes de veau sont taillées dans…", choix: ["La noix (cuisse)", "Le jarret", "Le collier", "La poitrine"], bonne: 0, explication: "La noix et la sous-noix, dans la cuisse, donnent des escalopes tendres." },
+      { q: "Le carré d'agneau est formé…", choix: ["De l'épaule désossée", "Des côtes", "Du gigot roulé", "De la selle hachée"], bonne: 1, explication: "On distingue les côtes premières, secondes et découvertes." },
+      { q: "Qu'appelle-t-on le « persillé » d'une viande ?", choix: ["Le persil ajouté à la cuisson", "Les fines traces de graisse dans le muscle", "Une viande avariée", "La peau de la viande"], bonne: 1, explication: "Le persillé (ou marbré) rend la viande plus moelleuse et goûteuse." },
+      { q: "À quoi sert la maturation de la viande de bœuf ?", choix: ["À la colorer", "À la rendre plus tendre et plus goûteuse", "À la saler", "À la congeler plus vite"], bonne: 1, explication: "On la laisse reposer en chambre froide quelques jours à plusieurs semaines." },
+      { q: "Le contre-filet et le faux-filet se situent…", choix: ["Dans l'aloyau, le long du dos", "Dans la cuisse", "Dans l'épaule", "Dans le cou"], bonne: 0, explication: "L'aloyau regroupe le filet, le contre-filet et le rumsteck : des morceaux de 1re catégorie." },
+      { q: "Quelle est la couleur normale d'une viande de veau de qualité ?", choix: ["Rouge foncé", "Blanc rosé", "Grise", "Verte"], bonne: 1, explication: "Le bœuf est rouge vif ; le veau, plus jeune, a une chair blanc rosé." }
+    ]
+  },
+  {
+    id: "volailles",
+    titre: "Volailles",
+    matiere: "Connaissance des produits",
+    questions: [
+      { q: "Qu'est-ce qu'un chapon ?", choix: ["Une jeune poule", "Un coq castré et engraissé", "Un canard sauvage", "Une dinde"], bonne: 1, explication: "Sa chair est fondante et persillée. C'est une volaille de fête." },
+      { q: "Une poularde, c'est…", choix: ["Une vieille poule pondeuse", "Une jeune poule engraissée qui n'a pas pondu", "Un poulet de 6 semaines", "Une pintade"], bonne: 1, explication: "La poularde a une chair tendre et grasse, idéale pochée ou rôtie." },
+      { q: "Quelle volaille française a une AOP ?", choix: ["Le poulet de Bresse", "Le poulet de batterie", "La dinde de Noël", "Le canard de Barbarie"], bonne: 0, explication: "La volaille de Bresse est protégée par une appellation d'origine (AOC/AOP)." },
+      { q: "Un poulet Label Rouge est élevé au minimum…", choix: ["21 jours", "40 jours", "81 jours", "1 an"], bonne: 2, explication: "Au moins 81 jours, contre environ 40 jours pour un poulet standard : sa chair est plus ferme et plus goûteuse." },
+      { q: "Pourquoi « flambe »-t-on une volaille avant de la préparer ?", choix: ["Pour la cuire", "Pour brûler les derniers duvets et plumes", "Pour la parfumer", "Pour la désinfecter à l'alcool"], bonne: 1, explication: "On la passe rapidement sur une flamme, puis on l'essuie." },
+      { q: "Brider une volaille, c'est…", choix: ["La ficeler pour qu'elle garde sa forme à la cuisson", "La découper en 8", "La farcir", "La faire mariner"], bonne: 0, explication: "Une volaille bridée cuit de façon régulière et se présente bien." },
+      { q: "Le « suprême » de volaille, c'est…", choix: ["La cuisse", "Le blanc avec le haut de l'aile", "Le foie", "La carcasse"], bonne: 1, explication: "C'est le filet (blanc), souvent présenté avec l'os du manchon." },
+      { q: "Pourquoi ne faut-il pas laver une volaille crue sous le robinet ?", choix: ["Ça la fait durcir", "Les éclaboussures répandent les bactéries (salmonelles, Campylobacter)", "Ça lui enlève son goût", "C'est interdit par la loi"], bonne: 1, explication: "C'est la cuisson à cœur qui détruit les bactéries. Le lavage contamine le plan de travail." },
+      { q: "En cuisine, le lapin est classé avec…", choix: ["Les viandes de boucherie", "Les volailles", "Le gibier à plumes", "Les abats"], bonne: 1, explication: "On parle de « volailles et lapins »." },
+      { q: "Un caneton, c'est…", choix: ["Un jeune canard", "Un pigeon", "Une oie", "Une caille"], bonne: 0, explication: "La canette est la jeune cane. Le magret provient d'un canard gavé." }
+    ]
+  },
+  {
+    id: "produits-mer",
+    titre: "Produits de la mer",
+    matiere: "Connaissance des produits",
+    questions: [
+      { q: "Lequel est un poisson plat ?", choix: ["Le cabillaud", "La sole", "Le saumon", "Le maquereau"], bonne: 1, explication: "Poissons plats : sole, turbot, barbue, limande, carrelet…" },
+      { q: "Lequel est un poisson gras ?", choix: ["Le colin", "La sole", "Le maquereau", "Le merlan"], bonne: 2, explication: "Poissons gras : saumon, maquereau, sardine, hareng, thon." },
+      { q: "Quel signe montre qu'un poisson est frais ?", choix: ["Œil creux et terne", "Ouïes brunes", "Œil bombé et brillant, ouïes rouge vif", "Chair molle"], bonne: 2, explication: "Un poisson frais a aussi une chair ferme, des écailles bien attachées et une odeur marine." },
+      { q: "Combien de filets lève-t-on sur un poisson plat ?", choix: ["1", "2", "4", "6"], bonne: 2, explication: "Un poisson plat donne 4 filets ; un poisson rond, 2 filets." },
+      { q: "« Habiller » un poisson, c'est…", choix: ["Le dresser sur l'assiette", "Ébarber, écailler, vider, laver", "Le cuire en papillote", "Le paner"], bonne: 1, explication: "C'est la préparation de base avant cuisson ou levée des filets." },
+      { q: "Une darne est…", choix: ["Un filet sans arête", "Une tranche épaisse d'un gros poisson rond, avec l'arête", "Un poisson entier", "Une sauce au poisson"], bonne: 1, explication: "Par exemple, une darne de saumon ou de colin. Sur un gros poisson plat, on parle de tronçon." },
+      { q: "Lequel est un mollusque ?", choix: ["Le homard", "L'huître", "La langoustine", "La crevette"], bonne: 1, explication: "Mollusques : huîtres, moules, Saint-Jacques. Crustacés : homard, langoustine, crevette, crabe." },
+      { q: "Une moule crue reste ouverte même quand on tape dessus. Que fais-tu ?", choix: ["Je la cuis quand même", "Je la jette", "Je la mets au congélateur", "Je la rince plus longtemps"], bonne: 1, explication: "Une moule ouverte qui ne se referme pas est morte : elle peut être dangereuse." },
+      { q: "Le calamar, la seiche et le poulpe sont des…", choix: ["Crustacés", "Céphalopodes", "Poissons plats", "Coquillages"], bonne: 1, explication: "Ce sont des mollusques sans coquille extérieure, avec des tentacules." },
+      { q: "Dans une coquille Saint-Jacques, on consomme…", choix: ["La noix et le corail", "La coquille", "Uniquement les barbes", "Les branchies"], bonne: 0, explication: "La noix est le muscle blanc ; le corail, la partie orangée." }
+    ]
+  },
+  {
+    id: "oeufs-produit",
+    titre: "Les œufs",
+    matiere: "Connaissance des produits",
+    questions: [
+      { q: "Sur la coquille, le premier chiffre du code est 0. Ça signifie…", choix: ["Œuf de poule élevée en cage", "Œuf bio", "Œuf de poule élevée au sol", "Œuf périmé"], bonne: 1, explication: "0 = bio, 1 = plein air, 2 = au sol, 3 = en cage." },
+      { q: "Jusqu'à combien de jours après la ponte un œuf peut-il être vendu « extra-frais » ?", choix: ["3 jours", "9 jours", "28 jours", "2 mois"], bonne: 1, explication: "Au-delà de 9 jours, il est simplement « frais » (catégorie A)." },
+      { q: "Un œuf de calibre M pèse…", choix: ["Moins de 53 g", "De 53 à 63 g", "De 63 à 73 g", "Plus de 73 g"], bonne: 1, explication: "S : moins de 53 g ; M : 53-63 g ; L : 63-73 g ; XL : 73 g et plus." },
+      { q: "Tu plonges un œuf dans l'eau : il flotte. Que peux-tu en déduire ?", choix: ["Il est très frais", "Il est vieux : sa chambre à air s'est agrandie", "Il est cuit", "Il est bio"], bonne: 1, explication: "Un œuf très frais coule et reste couché au fond." },
+      { q: "Quel composant du jaune d'œuf permet de faire une mayonnaise ?", choix: ["Le sucre", "La lécithine (émulsifiant)", "Le sel", "L'eau"], bonne: 1, explication: "La lécithine permet de mélanger durablement l'huile et l'eau." },
+      { q: "À la cuisson, quelle partie de l'œuf coagule en premier ?", choix: ["Le jaune", "Le blanc", "Les deux en même temps", "Aucune des deux"], bonne: 1, explication: "Le blanc coagule vers 62-65 °C, le jaune un peu plus tard, vers 65-70 °C." },
+      { q: "Combien de temps cuit un œuf mollet dans l'eau bouillante ?", choix: ["1 minute", "Environ 5 à 6 minutes", "Environ 10 minutes", "20 minutes"], bonne: 1, explication: "Œuf à la coque : 3 min ; mollet : 5-6 min ; dur : 9-10 min." },
+      { q: "Faut-il laver les œufs avant de les stocker ?", choix: ["Oui, toujours", "Non : le lavage abîme la protection naturelle de la coquille", "Oui, à l'eau chaude", "Seulement les œufs bio"], bonne: 1, explication: "On casse les œufs à part, dans un ramequin, et on se lave les mains après." },
+      { q: "Une mayonnaise maison aux œufs crus doit être…", choix: ["Gardée à température ambiante", "Conservée au froid et consommée rapidement, dans la journée", "Congelée", "Gardée une semaine"], bonne: 1, explication: "Les préparations aux œufs crus sont très sensibles aux salmonelles." },
+      { q: "Pourquoi la restauration collective utilise-t-elle souvent des ovoproduits (œufs liquides pasteurisés) ?", choix: ["Pour le goût", "Pour la sécurité sanitaire et le gain de temps", "Parce qu'ils sont plus jolis", "Parce que c'est obligatoire partout"], bonne: 1, explication: "La pasteurisation limite le risque de salmonelles." }
+    ]
+  },
+  {
+    id: "fruits-legumes",
+    titre: "Fruits et légumes",
+    matiere: "Connaissance des produits",
+    questions: [
+      { q: "Des carottes déjà épluchées, lavées et râpées, vendues en sachet, sont des légumes de…", choix: ["1re gamme", "3e gamme", "4e gamme", "5e gamme"], bonne: 2, explication: "1re : frais ; 2e : conserve ; 3e : surgelé ; 4e : cru prêt à l'emploi ; 5e : cuit, sous vide." },
+      { q: "Les légumes surgelés appartiennent à la…", choix: ["1re gamme", "2e gamme", "3e gamme", "5e gamme"], bonne: 2, explication: "Les conserves forment la 2e gamme." },
+      { q: "La pomme de terre est…", choix: ["Une racine", "Un tubercule", "Un fruit", "Une feuille"], bonne: 1, explication: "La carotte et le navet sont des racines." },
+      { q: "Lequel continue à mûrir après la cueillette ?", choix: ["La fraise", "Le raisin", "La banane", "L'orange"], bonne: 2, explication: "La banane, la tomate, la pomme ou la poire sont des fruits climactériques. La fraise, le raisin et les agrumes ne mûrissent plus." },
+      { q: "Lequel est un légume d'hiver ?", choix: ["La tomate", "La courgette", "Le poireau", "Le poivron"], bonne: 2, explication: "En hiver : poireau, chou, céleri-rave, endive. Tomate, courgette et poivron sont des légumes d'été." },
+      { q: "Pourquoi retirer les parties vertes d'une pomme de terre ?", choix: ["Elles sont dures", "Elles contiennent de la solanine, toxique", "Elles noircissent", "Elles sont trop sucrées"], bonne: 1, explication: "On retire aussi les germes." },
+      { q: "Monder une tomate, c'est…", choix: ["La couper en dés", "Retirer sa peau après un passage rapide dans l'eau bouillante puis glacée", "La faire sécher", "La vider de ses graines"], bonne: 1, explication: "Ensuite, on peut l'épépiner et la concasser." },
+      { q: "Pourquoi frotte-t-on un artichaut ou une pomme coupée avec du citron ?", choix: ["Pour la saler", "Pour éviter qu'elle noircisse (oxydation)", "Pour la cuire", "Pour la sucrer"], bonne: 1, explication: "L'acidité du citron ralentit le brunissement." },
+      { q: "Lentilles, pois cassés et haricots secs sont des…", choix: ["Légumes-feuilles", "Légumes secs (légumineuses)", "Fruits secs", "Céréales"], bonne: 1, explication: "Certains se font tremper avant la cuisson. On les cuit en départ eau froide, salés en fin de cuisson." },
+      { q: "En restauration, pourquoi lave-t-on soigneusement les légumes servis crus ?", choix: ["Pour les rendre plus brillants", "Pour éliminer la terre, les bactéries et les parasites", "Pour les ramollir", "Ce n'est pas utile"], bonne: 1, explication: "On lave, on désinfecte selon le protocole de l'établissement, puis on rince." }
+    ]
+  },
+  {
+    id: "epices-herbes",
+    titre: "Épices, herbes et condiments",
+    matiere: "Connaissance des produits",
+    questions: [
+      { q: "Que contient un bouquet garni classique ?", choix: ["Thym, laurier, queues de persil", "Basilic, menthe, coriandre", "Ail, oignon, échalote", "Poivre, sel, muscade"], bonne: 0, explication: "On l'enveloppe souvent dans du vert de poireau et on le ficelle." },
+      { q: "Quelles sont les « fines herbes » ?", choix: ["Thym, romarin, laurier", "Persil, cerfeuil, ciboulette, estragon", "Basilic, origan, sarriette", "Menthe, aneth, coriandre"], bonne: 1, explication: "On les utilise par exemple dans l'omelette aux fines herbes." },
+      { q: "Le safran, c'est…", choix: ["Une racine séchée", "Les pistils séchés d'une fleur de crocus", "Une graine", "Une écorce"], bonne: 1, explication: "C'est l'épice la plus chère au monde : il faut des milliers de fleurs pour en faire un peu." },
+      { q: "Quelle différence entre le poivre noir et le poivre blanc ?", choix: ["Ce sont deux plantes différentes", "C'est la même baie ; le blanc est débarrassé de son enveloppe", "Le blanc est artificiel", "Le noir est brûlé"], bonne: 1, explication: "On utilise le poivre blanc pour ne pas tacher les sauces blanches." },
+      { q: "Les câpres sont…", choix: ["Des petites olives", "Des boutons de fleurs du câprier, confits dans le vinaigre", "Des grains de poivre vert", "Des cornichons"], bonne: 1, explication: "On les utilise dans la sauce grenobloise et la sauce tartare." },
+      { q: "Le piment d'Espelette bénéficie d'une AOP. Il vient…", choix: ["De Provence", "Du Pays basque", "De Bretagne", "D'Alsace"], bonne: 1, explication: "C'est une épice douce et parfumée." },
+      { q: "Un oignon « clouté » est piqué avec…", choix: ["Des clous de girofle", "Des grains de poivre", "Des graines de moutarde", "De l'ail"], bonne: 0, explication: "On l'ajoute dans les fonds blancs, les bouillons et la béchamel parfumée." },
+      { q: "La fleur de sel est…", choix: ["Du sel parfumé aux fleurs", "Une fine couche de sel récoltée à la main à la surface des marais salants", "Du sel fin industriel", "Du sel de mine"], bonne: 1, explication: "On l'utilise plutôt en finition, pour son croquant." },
+      { q: "Quand ajouter des herbes fragiles comme le cerfeuil ou le basilic ?", choix: ["Au début d'une cuisson longue", "En fin de cuisson ou au dressage", "Jamais fraîches", "La veille"], bonne: 1, explication: "La chaleur leur fait perdre leur couleur et leur parfum." },
+      { q: "On râpe un peu de noix de muscade dans…", choix: ["La béchamel et la purée", "La crème anglaise", "La vinaigrette", "Le fumet de poisson"], bonne: 0, explication: "Elle relève aussi la sauce Mornay et les gratins." }
+    ]
+  },
+  {
+    id: "produits-laitiers",
+    titre: "Produits laitiers",
+    matiere: "Connaissance des produits",
+    questions: [
+      { q: "Le lait UHT…", choix: ["N'a pas été chauffé", "A été chauffé très fort quelques secondes et se garde plusieurs mois fermé, à température ambiante", "Doit être bu en 24 h", "Est toujours écrémé"], bonne: 1, explication: "Une fois ouvert, il se conserve au froid et se consomme en quelques jours." },
+      { q: "En France, le bouchon bleu correspond au lait…", choix: ["Entier", "Demi-écrémé", "Écrémé", "Cru"], bonne: 1, explication: "Rouge : entier ; bleu : demi-écrémé ; vert : écrémé." },
+      { q: "Le lait cru, c'est un lait…", choix: ["Chauffé à 100 °C", "Qui n'a pas été chauffé au-delà de 40 °C", "En poudre", "Sans matière grasse"], bonne: 1, explication: "Il est déconseillé aux femmes enceintes, aux jeunes enfants et aux personnes fragiles." },
+      { q: "Pour réussir une chantilly, il faut une crème…", choix: ["Liquide, entière et bien froide (au moins 30 % de matière grasse)", "Allégée à 15 %", "Épaisse et tiède", "En spray"], bonne: 0, explication: "Le froid et la matière grasse permettent d'emprisonner l'air." },
+      { q: "Quelle différence entre la crème fraîche épaisse et la crème liquide ?", choix: ["La crème épaisse contient de la farine", "La crème épaisse a été ensemencée de ferments lactiques", "La crème liquide est toujours UHT", "Aucune"], bonne: 1, explication: "Les ferments la font épaissir et lui donnent un léger goût acidulé." },
+      { q: "Le beurre contient au moins…", choix: ["50 % de matière grasse", "82 % de matière grasse", "100 % de matière grasse", "20 % de matière grasse"], bonne: 1, explication: "Le reste est surtout de l'eau." },
+      { q: "Pourquoi clarifie-t-on le beurre ?", choix: ["Pour le saler", "Pour retirer le petit-lait : il supporte alors une cuisson plus chaude sans brûler", "Pour le colorer", "Pour le rendre allégé"], bonne: 1, explication: "On l'utilise pour la sauce hollandaise ou pour saisir." },
+      { q: "Le yaourt est un lait fermenté par…", choix: ["De la levure de boulanger", "Deux bactéries lactiques spécifiques", "De la présure", "Du vinaigre"], bonne: 1, explication: "Lactobacillus bulgaricus et Streptococcus thermophilus." },
+      { q: "Lequel de ces produits laitiers a une AOP ?", choix: ["La crème d'Isigny", "La crème allégée", "Le lait en poudre", "La crème en bombe"], bonne: 0, explication: "Le beurre et la crème d'Isigny (Normandie) sont protégés par une AOP." },
+      { q: "Où stocke-t-on les produits laitiers frais ?", choix: ["À température ambiante", "Au froid, entre 0 et +4 °C", "Au congélateur", "Près du four"], bonne: 1, explication: "On respecte aussi les DLC et la règle du premier entré, premier sorti." }
+    ]
+  },
+  {
+    id: "fromages",
+    titre: "Fromages",
+    matiere: "Connaissance des produits",
+    questions: [
+      { q: "Le camembert est un fromage à…", choix: ["Pâte pressée cuite", "Pâte molle à croûte fleurie", "Pâte persillée", "Pâte molle à croûte lavée"], bonne: 1, explication: "Le brie est lui aussi une pâte molle à croûte fleurie." },
+      { q: "Le comté est un fromage à…", choix: ["Pâte pressée cuite", "Pâte molle", "Pâte persillée", "Pâte fraîche"], bonne: 0, explication: "Le beaufort et l'emmental sont aussi des pâtes pressées cuites." },
+      { q: "Le roquefort est fabriqué avec du lait de…", choix: ["Vache", "Chèvre", "Brebis", "Bufflonne"], bonne: 2, explication: "C'est un fromage à pâte persillée, protégé par une AOP." },
+      { q: "Le munster et le maroilles sont des fromages à…", choix: ["Croûte fleurie", "Croûte lavée", "Pâte pressée cuite", "Pâte fraîche"], bonne: 1, explication: "Leur croûte est lavée pendant l'affinage : elle est orangée et dégage une odeur forte." },
+      { q: "Le reblochon vient de…", choix: ["Savoie", "Normandie", "Bretagne", "Provence"], bonne: 0, explication: "C'est une pâte pressée non cuite, l'ingrédient de la tartiflette." },
+      { q: "Le crottin de Chavignol est un fromage de…", choix: ["Vache", "Chèvre", "Brebis", "Mélange vache et brebis"], bonne: 1, explication: "C'est un petit fromage de chèvre du Centre-Val de Loire." },
+      { q: "Pendant la fabrication, quelle étape transforme le lait en caillé ?", choix: ["L'affinage", "Le caillage (avec la présure ou des ferments)", "Le salage", "Le moulage"], bonne: 1, explication: "Les étapes : caillage, égouttage, moulage, salage, affinage." },
+      { q: "Le saint-nectaire, le cantal et la tomme de Savoie sont des pâtes…", choix: ["Pressées non cuites", "Pressées cuites", "Molles à croûte fleurie", "Persillées"], bonne: 0, explication: "Le caillé est pressé mais pas chauffé." },
+      { q: "Comment sert-on un plateau de fromages ?", choix: ["Sortis du froid au dernier moment", "À température ambiante : on les sort environ 1 h avant", "Chauds", "Congelés"], bonne: 1, explication: "C'est à température ambiante que le fromage révèle ses arômes." },
+      { q: "Dans quel ordre fait-on goûter les fromages ?", choix: ["Du plus fort au plus doux", "Du plus doux au plus fort", "Au hasard", "Les bleus en premier"], bonne: 1, explication: "On finit par les plus forts (persillés, croûtes lavées) pour ne pas écraser les goûts délicats." }
+    ]
+
   }
 ];
