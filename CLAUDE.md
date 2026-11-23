@@ -6,7 +6,8 @@ lui répondre simplement, sans jargon.
 
 ## Structure
 
-- `index.html` : accueil + fiches de révision.
+- `index.html` : accueil + fiches de révision CAP Cuisine, CAP CSHCR (`#cshcr`) et CAP PSR (`#psr`).
+  Quiz CSHCR/PSR dans `quizzes-data.js` (matières « CAP CSHCR » et « CAP PSR »), rédigés sans cours du formateur : à faire relire.
 - `quiz.html` + `quiz-app.js` : quiz. Questions dans `quizzes-data.js` (un bloc par quiz, `bonne` = index de la bonne réponse).
   Rappels de cours (2-4 lignes, affichés sous chaque réponse) dans `quizzes-rappels.js` : une liste par quiz, dans le
   même ordre que les questions. Tout nouveau quiz ou nouvelle question doit avoir son rappel.

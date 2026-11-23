@@ -242,5 +242,101 @@ window.QUIZ_RAPPELS = {
     "Pâte pressée non cuite : le caillé est pressé mais pas chauffé. Exemples : saint-nectaire, cantal, salers, morbier, tomme de Savoie, reblochon, ossau-iraty. L'affinage dure de quelques semaines à plusieurs mois.",
     "Service du fromage : sortir les fromages 30 min à 1 h avant pour qu'ils soient à température ambiante ; prévoir un couteau par famille ; présenter 3 à 5 fromages de familles différentes, avec du pain et éventuellement des fruits secs.",
     "Ordre de dégustation : du plus doux au plus fort, par exemple chèvre frais, pâte pressée, croûte fleurie, croûte lavée, puis pâte persillée. Sur un plateau, on les dispose dans le sens des aiguilles d'une montre, du plus doux au plus fort."
+  ],
+  "cshcr-service-salle": [
+    "La brigade de salle : directeur de restaurant, maître d'hôtel (il organise la salle et accueille), chef de rang (il s'occupe d'un groupe de tables, son « rang »), commis de salle. S'y ajoutent le sommelier (vins) et le barman (bar).",
+    "Service à l'assiette : le plat est dressé en cuisine, le serveur le pose devant le client par la droite. C'est rapide, régulier et la présentation reste celle voulue par le chef.",
+    "Service à la française : le serveur présente le plat par la gauche, le client se sert lui-même avec les couverts de service. Il est rare aujourd'hui, mais on le retrouve dans les banquets traditionnels.",
+    "Service à l'anglaise : le serveur tient le plat sur la main gauche et sert le client à la pince (cuillère et fourchette) par la gauche. Il demande de l'habileté et permet de doser les portions.",
+    "Service au guéridon (ou à la russe) : sur une petite table roulante, devant le client, le serveur découpe (canard, poisson entier), flambe (crêpes Suzette) ou dresse. C'est le service de la restauration gastronomique.",
+    "Règle courante en France : on pose les assiettes dressées et on sert les boissons par la droite ; on présente les plats (service à la française ou à l'anglaise) par la gauche. On débarrasse par la droite.",
+    "Ordre de service : d'abord les dames (en commençant par l'invitée d'honneur ou la plus âgée), puis les messieurs, et l'hôte (la personne qui invite ou qui paie) en dernier, comme le veut la politesse.",
+    "On débarrasse une table quand tous les convives ont fini, pour ne presser personne. On retire par la droite, en empilant hors de la vue du client si possible, sans bruit.",
+    "Avant le dessert, on « dégarnit » la table : pain, beurre, salière, poivrière, verres inutiles. On passe la ramasse-miettes si besoin, puis on rapproche les couverts à dessert placés en haut de l'assiette.",
+    "Langage des couverts : posés côte à côte en biais dans l'assiette, le client a terminé ; croisés ou écartés de chaque côté, il fait une pause. Le serveur observe la table pour intervenir au bon moment."
+  ],
+  "cshcr-accueil-vente": [
+    "L'accueil se joue dans les premières secondes : sourire, regard, salutation (« Bonjour Madame, bonjour Monsieur »), question sur la réservation, vouvoiement. On accompagne ensuite le client à sa table et on l'aide à s'installer.",
+    "La vente additionnelle consiste à proposer un produit en plus de la commande : apéritif, entrée, dessert, café, digestif. Elle se fait au bon moment, avec une suggestion précise (« Notre tarte du jour est aux poires »).",
+    "Ticket moyen = chiffre d'affaires ÷ nombre de couverts. Exemple : 1 500 € de ventes pour 60 couverts = 25 €. La vente additionnelle et le conseil font monter le ticket moyen.",
+    "Méthode CAP pour argumenter : C = caractéristique du produit (« un filet de bar grillé »), A = avantage pour le client (« léger, sans sauce »), P = preuve (« pêché à Sète ce matin »).",
+    "Une preuve est un fait vérifiable qui rassure le client : origine du produit, label (Label Rouge, AOP), fait maison, producteur local. « C'est bon » n'est pas un argument.",
+    "Traiter une réclamation : écouter sans couper ni se justifier, reconnaître le problème et s'excuser, proposer une solution (refaire le plat, geste commercial), puis vérifier que le client est satisfait. Un client bien traité revient.",
+    "L'addition (la note) s'apporte quand le client la demande, dans un porte-addition. On vérifie avant qu'elle correspond bien à la commande. La facture complète peut être demandée par un client professionnel.",
+    "Les prix affichés sur la carte sont des prix TTC, service compris : le service (15 %) est inclus dans le prix. Le pourboire est libre. La carte doit aussi être affichée à l'extérieur.",
+    "Rendre la monnaie : annoncer la somme reçue (« sur 50 € »), puis compter la monnaie en la rendant, à partir du montant de l'addition. Laisser le billet du client visible jusqu'à la fin évite les contestations.",
+    "L'information sur les 14 allergènes est obligatoire. Le personnel de salle doit pouvoir la donner (fiche des plats, demande en cuisine). Ne jamais répondre au hasard : une erreur peut provoquer une réaction grave."
+  ],
+  "cshcr-boissons-vins": [
+    "Les eaux-de-vie (boissons distillées) sont obtenues par distillation d'un liquide fermenté : cognac et armagnac (vin), calvados (cidre), whisky (céréales), rhum (canne à sucre). Elles se servent souvent en digestif.",
+    "Les boissons fermentées sont obtenues par fermentation alcoolique, sans distillation : vin (raisin), cidre (pomme), poiré (poire), bière (céréales maltées). Leur degré d'alcool est plus faible que celui des eaux-de-vie.",
+    "Champagne et crémants se servent entre 6 et 8 °C, dans un seau à glace (eau et glace). On les sert dans une flûte ou une coupe tulipe, en deux fois pour maîtriser la mousse.",
+    "Les vins rouges corsés (bordeaux, cahors, madiran) se servent entre 16 et 18 °C, ce que l'on appelait autrefois la « température ambiante ». Trop chaud, le vin paraît lourd et alcoolisé.",
+    "Vins blancs secs et rosés : 8 à 10 °C. Vins blancs moelleux et liquoreux : 8 °C environ. Rouges légers (gamay, pinot noir) : 12 à 14 °C. Un vin trop froid perd ses arômes.",
+    "Service d'une bouteille : présenter la bouteille à l'hôte, étiquette visible, en annonçant le vin et le millésime ; ouvrir devant lui ; essuyer le goulot ; faire goûter ; servir.",
+    "L'hôte goûte en premier pour vérifier l'absence de défaut (goût de bouchon, vin madérisé). S'il accepte le vin, on sert les dames, puis les messieurs, et l'hôte en dernier.",
+    "Carafer : verser un vin jeune dans une carafe pour l'aérer et ouvrir ses arômes. Décanter : transvaser doucement un vin vieux devant une bougie pour le séparer de son dépôt, qui reste dans la bouteille.",
+    "Les licences : la petite licence restaurant (vins, bières, cidres) et la licence restaurant permettent de servir l'alcool seulement à l'occasion des repas. Les licences III et IV (débit de boissons) permettent de servir sans repas.",
+    "On ne remplit pas un verre à vin jusqu'au bord : on laisse de l'espace pour que le vin respire et que le client puisse le faire tourner et le sentir. On sert la bouteille étiquette visible, sans toucher le verre."
+  ],
+  "cshcr-arts-table": [
+    "Le molleton (ou bulgomme) se pose sous la nappe. Il étouffe le bruit des couverts et de la vaisselle, protège la table et rend la nappe plus agréable au toucher. Il ne doit pas dépasser de la nappe.",
+    "Le napperon (ou surnappe) est une petite nappe posée en biais ou en carré sur la nappe. On le change entre deux services sans refaire toute la nappe, ce qui économise du linge et du temps.",
+    "Couvert de base : fourchette à gauche (pointes vers le haut), couteau à droite (tranchant tourné vers l'assiette), cuillère à soupe à droite du couteau. Les couverts sont alignés à environ 1 à 2 cm du bord de la table.",
+    "Les couverts à dessert peuvent être placés dès la mise en place, en haut de l'assiette : la cuillère manche vers la droite, la fourchette manche vers la gauche. Sinon, on les apporte au moment du dessert.",
+    "On tient un verre par le pied (ou par le bas pour un gobelet), jamais par le buvant, la partie touchée par les lèvres. Les verres se portent sur un plateau, jamais les doigts à l'intérieur.",
+    "La nappe se pose pli central dans l'axe de la table, avec une retombée égale de chaque côté, sans toucher les chaises. Une salle bien alignée (nappes, couverts, verres) donne une image soignée de l'établissement.",
+    "La gouvernante (générale ou d'étage) dirige le service des étages : elle répartit les chambres entre les femmes et valets de chambre, contrôle leur propreté et gère la lingerie (linge propre et sale).",
+    "Recouche : le client reste une nuit de plus ; on refait le lit, on nettoie, on remplace les serviettes et les produits d'accueil, sans toucher à ses affaires. À blanc : le client est parti ; on change tout le linge et on nettoie à fond.",
+    "Ordre de nettoyage d'une chambre : aérer, débarrasser (poubelles, plateaux), défaire et refaire le lit, dépoussiérer du haut vers le bas, nettoyer la salle de bains, puis le sol en dernier, et contrôler l'ensemble.",
+    "Une chambre « à blanc » doit être parfaite pour le client suivant : linge entièrement changé, salle de bains désinfectée, minibar et produits d'accueil complétés, objets oubliés remis à la réception."
+  ],
+  "psr-production": [
+    "Cuisine centrale : elle produit en grande quantité pour plusieurs restaurants satellites (cantines, hôpitaux, entreprises). Les satellites réceptionnent les plats, les remettent en température et les distribuent.",
+    "Liaison chaude : les plats sont cuits puis maintenus à +63 °C minimum, transportés en conteneurs isothermes, jusqu'au service. On contrôle et on note la température à la livraison et au service.",
+    "Liaison froide : après cuisson, refroidissement rapide de +63 °C à +10 °C en moins de 2 h en cellule de refroidissement. Cela limite le temps passé dans la zone de danger (+10 à +63 °C).",
+    "Stockage en liaison froide : entre 0 et +3 °C jusqu'à la remise en température. Chaque préparation est étiquetée avec sa DLC, fixée par l'établissement et souvent courte (quelques jours).",
+    "Remise en température : de +3 °C à +63 °C en moins d'1 heure, en four mixte ou en chariot de remise en température. Le plat est ensuite maintenu à +63 °C jusqu'au service, et ne se réchauffe qu'une seule fois.",
+    "Le plat témoin : un échantillon de chaque plat servi (environ 80 à 100 g), étiqueté et conservé 5 jours au froid (0 à +3 °C) après le service. En cas de TIAC, il est analysé pour trouver l'origine.",
+    "L'assemblage consiste à réaliser un plat à partir de produits déjà préparés ou semi-élaborés : légumes de 4e gamme, viandes cuites, sauces prêtes. On respecte la fiche technique, les grammages et l'hygiène (gants, plans de travail).",
+    "Les 5 gammes : 1re frais, 2e conserve, 3e surgelé, 4e cru prêt à l'emploi (lavé, épluché, coupé, au froid), 5e cuit et conditionné sous vide. Les 4e et 5e gammes font gagner du temps en restauration collective.",
+    "Étiquette d'une préparation conditionnée : nom du produit, date de fabrication, DLC, et souvent numéro de lot. Elle assure la traçabilité et permet de respecter la règle du premier entré, premier sorti.",
+    "Le GEMRCN donne des recommandations pour la restauration collective : grammages selon l'âge des convives, fréquence de service des plats (limiter les fritures, servir du poisson, des crudités, des produits laitiers), pour des menus équilibrés."
+  ],
+  "psr-distribution-self": [
+    "Ordre d'une ligne de self : plateaux, couverts et serviettes ; entrées et crudités ; plats chauds ; fromages et laitages ; desserts ; pain et boissons. Le convive avance dans un seul sens, sans retour en arrière.",
+    "Les produits froids (entrées, desserts, laitages) sont présentés en vitrine réfrigérée, entre 0 et +3 °C. On évite de sortir trop de portions à l'avance et on contrôle la température pendant le service.",
+    "Les plats chauds restent à +63 °C minimum, au bain-marie ou sur plaque chauffante. On vérifie la température au thermomètre et on la note. Le bain-marie sert à maintenir, pas à réchauffer.",
+    "Le pare-haleine est la vitre placée au-dessus des produits exposés. Il protège les aliments des postillons et des mains des convives. Il doit rester propre et bien positionné.",
+    "Réassort : réapprovisionner souvent, en petites quantités, avec un bac propre. On ne verse jamais un bac neuf sur un reste, pour ne pas mélanger un produit qui a attendu avec un produit frais.",
+    "Les denrées présentées au convive et non consommées à la fin du service ne sont pas resservies. Bien estimer les quantités et faire un réassort régulier limite ce gaspillage.",
+    "Les portions régulières respectent les grammages (GEMRCN, fiche technique) et maîtrisent le coût matière. On utilise des louches et cuillères calibrées, des bacs gastronormes découpés à l'avance, des ramequins.",
+    "Les plateaux, couverts et verres mis à disposition doivent être propres et secs. Ils sont stockés à l'abri de la poussière, retournés ou dans des distributeurs, et le plateau sale repart vers la plonge sans croiser la ligne propre.",
+    "Affichages pour les convives : le menu du jour, l'information sur les allergènes (obligatoire), et souvent l'origine des viandes. En cas de doute, le personnel consulte les fiches ou les étiquettes.",
+    "Un plat chaud resté longtemps sous +63 °C est entré dans la zone de danger (+10 à +63 °C), où les bactéries se multiplient vite. Il est jeté : on ne le réchauffe pas pour le resservir."
+  ],
+  "psr-entretien": [
+    "Règles de base du nettoyage : du haut vers le bas, du plus propre vers le plus sale, des zones de production vers les zones sales, et le sol en dernier. On commence toujours par retirer les déchets et les objets.",
+    "Pas de balai sec en zone alimentaire : il met la poussière et les microbes en suspension dans l'air. On utilise le balayage humide (gaze, frange), la raclette, l'autolaveuse ou un aspirateur adapté.",
+    "Code couleur : une couleur de lavette ou de seau par zone (par exemple bleu pour les surfaces de cuisine, rouge pour les sanitaires). On ne transporte ainsi pas les microbes des toilettes vers la cuisine.",
+    "Le plan de nettoyage-désinfection (PND) précise pour chaque zone et chaque matériel : quoi, qui, quand (fréquence), comment (méthode), avec quel produit et à quel dosage. Chaque tâche réalisée est enregistrée.",
+    "Ne jamais mélanger les produits : eau de Javel et acide (détartrant, vinaigre) dégagent du chlore, un gaz toxique. Javel et ammoniaque aussi. On utilise un produit à la fois et on rince entre deux.",
+    "Un désinfectant agit si l'on respecte le dosage (ni trop, ni trop peu), le temps de contact indiqué (souvent plusieurs minutes) et la température de l'eau. Sur une surface sale, il agit mal : on nettoie d'abord, on désinfecte ensuite.",
+    "L'étiquette porte les pictogrammes de danger (corrosif, irritant, toxique…). La fiche de données de sécurité (FDS) détaille les risques, les équipements de protection (gants, lunettes) et les gestes en cas d'accident.",
+    "Lave-vaisselle : prélavage (on retire les restes), lavage vers 55-65 °C avec un détergent, rinçage vers 80-85 °C avec un produit de rinçage. La température élevée du rinçage désinfecte et accélère le séchage.",
+    "Après lavage, la vaisselle sèche à l'air libre, sur des grilles ou des chariots. Le torchon est interdit pour essuyer : il transporte les microbes d'une pièce à l'autre. Vaisselle sèche = rangée à l'abri de la poussière.",
+    "Les huiles de friture usagées se versent, refroidies, dans un bidon fermé, récupéré par une société de collecte qui les recycle. Jetées dans l'évier, elles bouchent les canalisations et polluent l'eau."
+  ],
+  "psr-accueil-encaissement": [
+    "L'accueil en restauration rapide ou collective : saluer chaque convive, sourire, parler distinctement, rester disponible et calme même au moment du rush. La tenue professionnelle doit être propre et complète.",
+    "Allergènes : le personnel doit pouvoir informer le convive sur les 14 allergènes. On consulte la fiche technique ou l'étiquette du produit. Au moindre doute, on le dit et on propose un plat sûr.",
+    "Traiter une réclamation : écouter, reformuler (« Si je comprends bien, votre plat était froid ? »), s'excuser, proposer une solution (changer le plat), puis vérifier que le convive est satisfait. On reste poli, même face à un client énervé.",
+    "Le fond de caisse est la somme placée dans le tiroir au début du service (pièces et petits billets) pour pouvoir rendre la monnaie. Il est compté à l'ouverture et retiré du total à la fermeture.",
+    "Rendre la monnaie : annoncer la somme reçue (« sur 20 € »), poser le billet du client à part, puis compter la monnaie à voix haute en la rendant, en partant du prix jusqu'à la somme reçue.",
+    "Clôture de caisse : on édite le ticket Z (total des ventes de la journée, par mode de paiement), on compte les espèces, les tickets de carte bancaire et les titres-restaurant, puis on compare. On signale tout écart.",
+    "TVA en restauration : 10 % pour les repas et boissons sans alcool consommés sur place ou à emporter pour être consommés tout de suite ; 5,5 % pour les produits alimentaires vendus pour être consommés plus tard ; 20 % pour les boissons alcoolisées.",
+    "Une boisson sans alcool servie pour être bue tout de suite est taxée à 10 %, comme le repas. Les boissons alcoolisées restent toujours à 20 %. Le ticket de caisse doit faire apparaître le montant de TVA.",
+    "Calcul de la monnaie à rendre : somme reçue − prix. Exemple : 20 − 8,50 = 11,50 €. On peut aussi compter en remontant : 8,50 + 0,50 = 9, + 1 = 10, + 10 = 20 ; on rend donc 0,50 + 1 + 10 = 11,50 €.",
+    "En restauration collective (entreprise, établissement scolaire), le convive paie souvent avec un badge ou une carte rechargeable, débité en sortie de ligne. Le personnel vérifie le solde et signale les badges à recharger."
   ]
 };

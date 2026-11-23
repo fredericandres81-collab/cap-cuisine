@@ -353,5 +353,146 @@ window.QUIZZES = [
       { q: "Dans quel ordre fait-on goûter les fromages ?", choix: ["Du plus fort au plus doux", "Du plus doux au plus fort", "Au hasard", "Les bleus en premier"], bonne: 1, explication: "On finit par les plus forts (persillés, croûtes lavées) pour ne pas écraser les goûts délicats." }
     ]
 
+  },
+
+  // ===================== CAP CSHCR =====================
+  {
+    id: "cshcr-service-salle",
+    titre: "Le service en salle",
+    matiere: "CAP CSHCR",
+    questions: [
+      { q: "Dans la brigade de salle, qui fait la navette entre la salle et l'office et aide le chef de rang ?", choix: ["Le maître d'hôtel", "Le commis de salle", "Le sommelier", "Le directeur de restaurant"], bonne: 1, explication: "Le commis débarrasse, apporte les plats et assiste le chef de rang." },
+      { q: "Dans le service à l'assiette…", choix: ["Le client se sert au plat", "L'assiette est dressée en cuisine et posée devant le client", "Le serveur découpe sur un guéridon", "Le serveur sert à la pince depuis le plat"], bonne: 1, explication: "C'est le service le plus courant en restauration traditionnelle." },
+      { q: "Dans le service à la française…", choix: ["Le serveur sert le client à la pince", "Le serveur présente le plat par la gauche et le client se sert lui-même", "Le plat est flambé devant le client", "Le client va se servir au buffet"], bonne: 1, explication: "À ne pas confondre avec le service à l'anglaise, où c'est le serveur qui sert." },
+      { q: "Dans le service à l'anglaise…", choix: ["Le serveur sert lui-même le client depuis le plat, à la pince, par la gauche", "Le client se sert seul", "L'assiette arrive dressée de la cuisine", "Le plat est découpé en cuisine"], bonne: 0, explication: "Le serveur tient le plat de la main gauche et la pince de la main droite." },
+      { q: "Le service au guéridon consiste à…", choix: ["Servir au comptoir", "Découper, flamber ou dresser sur une petite table roulante, devant le client", "Poser le plat au centre de la table", "Servir en self"], bonne: 1, explication: "C'est un service spectaculaire, typique de la restauration gastronomique." },
+      { q: "Par quel côté pose-t-on une assiette dressée devant le client ?", choix: ["Par la gauche", "Par la droite", "Par devant", "Peu importe"], bonne: 1, explication: "Assiettes dressées et boissons par la droite ; les plats se présentent par la gauche." },
+      { q: "À qui sert-on en dernier ?", choix: ["À la personne la plus âgée", "Aux dames", "À l'hôte, la personne qui invite", "Aux enfants"], bonne: 2, explication: "On sert d'abord les dames, puis les messieurs, et l'hôte en dernier." },
+      { q: "Quand débarrasse-t-on les assiettes d'une table ?", choix: ["Dès qu'un client a fini", "Quand tous les convives ont terminé", "Pendant que les clients mangent", "Au moment de l'addition"], bonne: 1, explication: "Débarrasser une personne seule pousse les autres à se dépêcher." },
+      { q: "Que retire-t-on de la table avant de servir le dessert ?", choix: ["Les verres à eau", "Le pain, le beurre, la salière et la poivrière", "La nappe", "Les serviettes"], bonne: 1, explication: "On rapproche ensuite les couverts à dessert, placés en haut de l'assiette." },
+      { q: "Un client pose ses couverts côte à côte, en biais dans l'assiette. Ça signifie…", choix: ["Qu'il fait une pause", "Qu'il a terminé", "Qu'il veut l'addition", "Qu'il n'a pas aimé"], bonne: 1, explication: "Couverts croisés ou écartés : il n'a pas fini." }
+    ]
+  },
+  {
+    id: "cshcr-accueil-vente",
+    titre: "Accueil et vente",
+    matiere: "CAP CSHCR",
+    questions: [
+      { q: "Quelle est la bonne façon d'accueillir un client ?", choix: ["« Salut, c'est pour manger ? »", "« Bonjour Madame, bonjour Monsieur, avez-vous réservé ? »", "Attendre qu'il parle en premier", "Lui montrer une table du doigt"], bonne: 1, explication: "Sourire, regard, salutation et vouvoiement, dès les premières secondes." },
+      { q: "Proposer un apéritif, un dessert ou un café en plus de la commande, c'est…", choix: ["Du harcèlement", "La vente additionnelle", "Une réclamation", "Le service à l'anglaise"], bonne: 1, explication: "Bien faite, elle rend service au client et augmente le chiffre d'affaires." },
+      { q: "Le ticket moyen se calcule ainsi :", choix: ["Chiffre d'affaires ÷ nombre de couverts", "Nombre de couverts × prix du menu", "Chiffre d'affaires − charges", "Prix TTC − prix HT"], bonne: 0, explication: "Exemple : 1 500 € pour 60 couverts = 25 € de ticket moyen." },
+      { q: "Dans la méthode d'argumentation CAP, que signifie le A ?", choix: ["Accueil", "Avantage pour le client", "Addition", "Apéritif"], bonne: 1, explication: "C = caractéristique, A = avantage, P = preuve." },
+      { q: "Quel argument est une « preuve » pour vendre un plat ?", choix: ["« C'est bon »", "« Le poisson vient du port de Sète ce matin »", "« Prenez-le, vous verrez »", "« Tout le monde le prend »"], bonne: 1, explication: "Une preuve est un fait vérifiable : origine, label, fait maison." },
+      { q: "Un client se plaint d'un plat froid. Que fais-tu en premier ?", choix: ["Tu te justifies", "Tu l'écoutes sans le couper", "Tu appelles la police", "Tu l'ignores"], bonne: 1, explication: "Ensuite : reconnaître le problème, proposer une solution, vérifier qu'il est satisfait." },
+      { q: "Quand apporte-t-on l'addition ?", choix: ["Avec le dessert", "Quand le client la demande", "Dès la commande", "Avant le café, pour libérer la table"], bonne: 1, explication: "Apporter l'addition sans demande donne l'impression qu'on pousse le client dehors." },
+      { q: "En France, les prix affichés sur la carte sont…", choix: ["Hors taxes", "TTC et service compris", "Sans le pain", "Indicatifs"], bonne: 1, explication: "Le service est déjà inclus dans le prix : le pourboire reste libre." },
+      { q: "Comment rend-on la monnaie ?", choix: ["On la pose sur la table sans rien dire", "On annonce la somme reçue puis on compte la monnaie devant le client", "On la garde en pourboire", "On la rend en une seule fois sans compter"], bonne: 1, explication: "Cela évite les erreurs et les contestations." },
+      { q: "Un client demande si un plat contient des fruits à coque. Tu…", choix: ["Réponds « je ne pense pas »", "Vérifies auprès de la cuisine ou sur la fiche des allergènes", "Lui conseilles de goûter", "Changes de sujet"], bonne: 1, explication: "L'information sur les 14 allergènes est obligatoire. On ne répond jamais au hasard." }
+    ]
+  },
+  {
+    id: "cshcr-boissons-vins",
+    titre: "Boissons et vins",
+    matiere: "CAP CSHCR",
+    questions: [
+      { q: "Le cognac est…", choix: ["Un vin doux", "Une eau-de-vie (boisson distillée)", "Une bière", "Une liqueur de fruits"], bonne: 1, explication: "Eaux-de-vie : cognac, armagnac, calvados, whisky, rhum." },
+      { q: "Le cidre est une boisson…", choix: ["Distillée", "Fermentée", "Sans alcool", "Anisée"], bonne: 1, explication: "Boissons fermentées : vin, bière, cidre." },
+      { q: "À quelle température sert-on un champagne ?", choix: ["2 °C", "6 à 8 °C", "12 à 14 °C", "18 °C"], bonne: 1, explication: "Trop froid, il perd ses arômes ; trop chaud, il mousse et paraît lourd." },
+      { q: "À quelle température sert-on un vin rouge corsé, comme un bordeaux ?", choix: ["8 °C", "12 °C", "16 à 18 °C", "22 à 24 °C"], bonne: 2, explication: "Rouge léger (gamay, pinot noir) : 12 à 14 °C." },
+      { q: "Un vin blanc sec se sert à…", choix: ["4 °C", "8 à 10 °C", "16 °C", "Température ambiante"], bonne: 1, explication: "Le rosé se sert à la même température." },
+      { q: "Quelle est la première étape du service d'une bouteille de vin ?", choix: ["La déboucher en cuisine", "Présenter la bouteille à l'hôte, étiquette tournée vers lui", "Servir les dames", "Remplir les verres"], bonne: 1, explication: "Puis : ouvrir devant lui, faire goûter, servir." },
+      { q: "Qui goûte le vin en premier ?", choix: ["Le sommelier", "L'hôte, la personne qui a commandé ou qui invite", "La dame la plus âgée", "Personne"], bonne: 1, explication: "Il vérifie que le vin n'a pas de défaut (goût de bouchon)." },
+      { q: "Quelle est la différence entre carafer et décanter ?", choix: ["Aucune", "Carafer aère un vin jeune ; décanter sépare un vin vieux de son dépôt", "Carafer refroidit le vin", "Décanter, c'est ajouter de l'eau"], bonne: 1, explication: "Pour décanter, on verse doucement devant une bougie pour voir arriver le dépôt." },
+      { q: "Avec une licence restaurant, on peut servir de l'alcool…", choix: ["À toute heure, sans repas", "Seulement pendant les repas, en accompagnement", "Jamais", "Seulement à emporter"], bonne: 1, explication: "Pour servir de l'alcool sans repas, il faut une licence de débit de boissons (III ou IV)." },
+      { q: "Comment remplit-on un verre de vin ?", choix: ["À ras bord", "Sans aller jusqu'au bord, pour laisser le vin respirer", "À moitié d'eau", "Une goutte seulement"], bonne: 1, explication: "Un verre trop plein se renverse et empêche de sentir les arômes." }
+    ]
+  },
+  {
+    id: "cshcr-arts-table",
+    titre: "Arts de la table et hébergement",
+    matiere: "CAP CSHCR",
+    questions: [
+      { q: "À quoi sert le molleton posé sous la nappe ?", choix: ["À décorer", "À étouffer le bruit et protéger la table", "À remplacer la serviette", "À rien"], bonne: 1, explication: "Il rend aussi la nappe plus agréable au toucher." },
+      { q: "Le napperon (ou surnappe) se pose…", choix: ["Sous le molleton", "Par-dessus la nappe", "Sur les chaises", "Sous l'assiette à pain"], bonne: 1, explication: "On le change sans refaire toute la nappe, ce qui fait gagner du temps." },
+      { q: "Où place-t-on le couteau ?", choix: ["À gauche de l'assiette", "À droite, tranchant tourné vers l'assiette", "En haut de l'assiette", "Dans l'assiette"], bonne: 1, explication: "La fourchette est à gauche, la cuillère à soupe à droite du couteau." },
+      { q: "Où se placent les couverts à dessert ?", choix: ["À gauche des fourchettes", "En haut de l'assiette", "Sur l'assiette à pain", "On les apporte toujours avec le dessert"], bonne: 1, explication: "Quand ils sont mis en place dès le départ, ils sont en haut de l'assiette." },
+      { q: "Comment tient-on un verre ?", choix: ["Par le buvant", "Par le pied", "Par l'intérieur", "À deux mains"], bonne: 1, explication: "Toucher le buvant, la partie où l'on boit, est une faute d'hygiène." },
+      { q: "Une nappe bien posée…", choix: ["Tombe plus d'un côté que de l'autre", "Tombe de la même longueur de chaque côté, pli central dans l'axe de la table", "Touche le sol", "Est posée en biais"], bonne: 1, explication: "La régularité de la mise en place donne une image soignée de la salle." },
+      { q: "Qui dirige le service des étages dans un hôtel ?", choix: ["Le concierge", "La gouvernante", "Le chef de rang", "Le bagagiste"], bonne: 1, explication: "Elle encadre les femmes et valets de chambre et la lingerie." },
+      { q: "Une « recouche », c'est…", choix: ["La chambre d'un client qui reste : on la refait", "Une chambre vide", "Une sieste", "Un lit supplémentaire"], bonne: 0, explication: "Une chambre « à blanc » est une chambre après le départ du client : tout le linge est changé." },
+      { q: "Dans quel ordre nettoie-t-on une chambre ?", choix: ["Le sol d'abord", "Aérer, débarrasser, faire le lit, dépoussiérer du haut vers le bas, salle de bains, sol en dernier", "La salle de bains en premier, le lit en dernier", "Peu importe"], bonne: 1, explication: "On nettoie du haut vers le bas et du propre vers le sale." },
+      { q: "Dans une chambre « à blanc »…", choix: ["On change seulement les serviettes", "On change tout le linge et on nettoie à fond", "On ne fait rien", "On laisse les affaires du client"], bonne: 1, explication: "Elle doit être parfaite pour le prochain client." }
+    ]
+  },
+
+  // ===================== CAP PSR =====================
+  {
+    id: "psr-production",
+    titre: "La production collective",
+    matiere: "CAP PSR",
+    questions: [
+      { q: "Une cuisine centrale…", choix: ["Sert uniquement sur place", "Produit les repas pour plusieurs restaurants satellites", "Est une cuisine de restaurant étoilé", "Ne cuit rien"], bonne: 1, explication: "Les satellites reçoivent les plats, les remettent en température et les servent." },
+      { q: "En liaison chaude, le plat doit rester à…", choix: ["+40 °C", "+55 °C", "+63 °C minimum", "+100 °C"], bonne: 2, explication: "De la fin de cuisson jusqu'à la consommation." },
+      { q: "En liaison froide, le refroidissement rapide doit amener le plat…", choix: ["De +63 °C à +10 °C en moins de 2 h", "De +90 °C à +40 °C en 4 h", "De +63 °C à 0 °C en 10 min", "À température ambiante"], bonne: 0, explication: "On utilise une cellule de refroidissement rapide." },
+      { q: "En liaison froide, les plats sont stockés…", choix: ["Entre 0 et +3 °C", "Entre +8 et +10 °C", "À −18 °C", "À température ambiante"], bonne: 0, explication: "Puis on les remet en température à +63 °C en moins d'1 h." },
+      { q: "La remise en température d'un plat en liaison froide doit atteindre +63 °C en…", choix: ["Moins d'1 heure", "Moins de 3 heures", "Une nuit", "10 secondes"], bonne: 0, explication: "Plus la remontée est lente, plus le plat reste longtemps dans la zone de danger." },
+      { q: "Combien de temps garde-t-on un plat témoin ?", choix: ["24 heures", "5 jours au froid (0 à +3 °C)", "1 mois au congélateur", "On ne le garde pas"], bonne: 1, explication: "En cas d'intoxication, il permet aux services de contrôle d'analyser le plat." },
+      { q: "« Assembler » un plat, c'est…", choix: ["Le cuire longtemps", "Le réaliser avec des produits déjà préparés", "Le jeter", "Le congeler"], bonne: 1, explication: "Par exemple, une salade composée avec des légumes de 4e gamme et une sauce prête." },
+      { q: "Des carottes épluchées et râpées, prêtes à l'emploi, vendues en sachet, sont des légumes de…", choix: ["1re gamme", "3e gamme", "4e gamme", "5e gamme"], bonne: 2, explication: "La 5e gamme regroupe les produits cuits et conditionnés sous vide." },
+      { q: "Que doit indiquer l'étiquette d'une préparation conditionnée ?", choix: ["Le nom du cuisinier seulement", "Le nom du produit, la date de fabrication et la DLC", "Le prix de vente", "Rien"], bonne: 1, explication: "C'est indispensable pour la traçabilité et le respect des dates." },
+      { q: "Le GEMRCN fixe, pour la restauration collective…", choix: ["Les salaires", "Les grammages et la fréquence de service des plats", "Les horaires d'ouverture", "Les prix"], bonne: 1, explication: "Il vise l'équilibre nutritionnel des repas." }
+    ]
+  },
+  {
+    id: "psr-distribution-self",
+    titre: "Distribution et self",
+    matiere: "CAP PSR",
+    questions: [
+      { q: "Dans quel ordre trouve-t-on habituellement les produits sur une ligne de self ?", choix: ["Desserts, plats, entrées", "Plateaux et couverts, entrées, plats chauds, fromages, desserts", "Boissons en premier, plateaux à la fin", "Au hasard"], bonne: 1, explication: "On suit l'ordre du repas, dans le sens du passage du convive." },
+      { q: "À quelle température sont présentées les entrées froides ?", choix: ["Entre 0 et +3 °C, en vitrine réfrigérée", "À +10 °C", "À température ambiante", "À −18 °C"], bonne: 0, explication: "La vitrine réfrigérée maintient la chaîne du froid pendant le service." },
+      { q: "Les plats chauds sur la ligne de self doivent rester à…", choix: ["+40 °C", "+63 °C minimum", "+50 °C", "+30 °C"], bonne: 1, explication: "On les garde au bain-marie ou sur une plaque chauffante." },
+      { q: "À quoi sert le pare-haleine ?", choix: ["À éclairer les plats", "À protéger les produits des postillons des convives", "À garder la chaleur", "À afficher les prix"], bonne: 1, explication: "C'est la vitre placée au-dessus des produits exposés." },
+      { q: "Comment fait-on le réassort sur la ligne ?", choix: ["En mélangeant le bac neuf avec le reste", "Souvent, en petites quantités, sans mélanger un bac neuf avec un reste", "Une seule fois, au début du service", "Quand le bac est vide depuis 10 minutes"], bonne: 1, explication: "Mélanger mettrait en contact un produit qui a attendu avec un produit frais." },
+      { q: "Un plat a été présenté sur la ligne et n'a pas été pris. À la fin du service…", choix: ["On le resservira demain", "On ne le resert pas", "On le congèle", "On le remet dans le bac neuf"], bonne: 1, explication: "Les produits présentés au convive et non consommés ne sont pas réutilisés." },
+      { q: "Pourquoi utilise-t-on une louche ou une cuillère de portion calibrée ?", choix: ["Pour aller plus vite seulement", "Pour servir des portions régulières (grammages)", "Pour décorer", "C'est interdit"], bonne: 1, explication: "Des portions régulières respectent les grammages et maîtrisent les coûts." },
+      { q: "Les plateaux mis à disposition des convives doivent être…", choix: ["Propres et secs", "Encore humides", "Empilés à l'envers par terre", "Lavés à la main par les convives"], bonne: 0, explication: "Un plateau humide favorise les microbes et l'empilement mouillé." },
+      { q: "Que doit-on afficher pour informer les convives ?", choix: ["Le salaire du personnel", "Le menu et l'information sur les allergènes", "Les recettes complètes", "Rien"], bonne: 1, explication: "L'information sur les allergènes est obligatoire en restauration." },
+      { q: "Un bac de purée est resté 2 heures à +45 °C sur la ligne. Tu…", choix: ["Le resserts", "Le jettes : il est resté dans la zone de danger", "Le remets à chauffer et le resserts", "Le mets au froid pour demain"], bonne: 1, explication: "Entre +10 et +63 °C, les bactéries se multiplient vite." }
+    ]
+  },
+  {
+    id: "psr-entretien",
+    titre: "Entretien des locaux",
+    matiere: "CAP PSR",
+    questions: [
+      { q: "Dans quel ordre nettoie-t-on un local ?", choix: ["Du bas vers le haut", "Du haut vers le bas, du propre vers le sale, le sol en dernier", "Le sol en premier", "Peu importe"], bonne: 1, explication: "Sinon, la saleté retombe sur ce qui vient d'être nettoyé." },
+      { q: "Pourquoi n'utilise-t-on pas de balai sec en zone alimentaire ?", choix: ["Il s'use trop vite", "Il soulève la poussière et les microbes", "Il est trop lourd", "Il coûte cher"], bonne: 1, explication: "On utilise un balai humide, une raclette ou un aspirateur adapté." },
+      { q: "À quoi sert le code couleur des lavettes ?", choix: ["À faire joli", "À ne pas transporter les microbes d'une zone à l'autre", "À reconnaître le propriétaire", "À rien"], bonne: 1, explication: "Par exemple, une couleur pour les sanitaires, jamais utilisée en cuisine." },
+      { q: "Le plan de nettoyage indique…", choix: ["Le menu de la semaine", "Quoi nettoyer, qui le fait, quand, comment et avec quel produit", "Les horaires d'ouverture", "Les prix des produits"], bonne: 1, explication: "Chaque nettoyage effectué est noté pour assurer la traçabilité." },
+      { q: "Peut-on mélanger de l'eau de Javel et un détartrant (acide) ?", choix: ["Oui, ça nettoie mieux", "Non, ça dégage un gaz toxique", "Oui, avec de l'eau chaude", "Seulement dehors"], bonne: 1, explication: "On ne mélange jamais deux produits d'entretien." },
+      { q: "Pour qu'un désinfectant soit efficace, il faut respecter…", choix: ["Sa couleur", "Le dosage et le temps de contact indiqués", "Son prix", "La température du local"], bonne: 1, explication: "Rincé trop tôt ou trop dilué, il ne détruit pas les microbes." },
+      { q: "Où trouve-t-on les risques d'un produit d'entretien et les protections à porter ?", choix: ["Sur le ticket de caisse", "Sur l'étiquette (pictogrammes) et dans la fiche de données de sécurité (FDS)", "Sur internet seulement", "Nulle part"], bonne: 1, explication: "La FDS précise aussi quoi faire en cas d'accident." },
+      { q: "En lave-vaisselle, le rinçage se fait vers…", choix: ["20 °C", "40 °C", "80-85 °C", "100 °C"], bonne: 2, explication: "Le lavage se fait vers 55-65 °C ; le rinçage très chaud désinfecte et aide au séchage." },
+      { q: "Comment sèche-t-on la vaisselle après la plonge ?", choix: ["Avec un torchon", "À l'air libre, sans torchon", "Au sèche-cheveux", "On la range mouillée"], bonne: 1, explication: "Le torchon transporte les microbes d'un objet à l'autre." },
+      { q: "Où jette-t-on les huiles de friture usagées ?", choix: ["Dans l'évier", "Dans un bidon, pour une collecte spécifique", "Dans la poubelle des biodéchets", "Dans les toilettes"], bonne: 1, explication: "Elles boucheraient les canalisations et polluent l'eau." }
+    ]
+  },
+  {
+    id: "psr-accueil-encaissement",
+    titre: "Accueil et encaissement",
+    matiere: "CAP PSR",
+    questions: [
+      { q: "Quelle attitude adopter avec les convives, même au moment du rush ?", choix: ["Ne pas les regarder", "Saluer, sourire et rester disponible", "Les presser", "Parler entre collègues"], bonne: 1, explication: "L'accueil compte autant que la qualité du repas." },
+      { q: "Un convive demande si un plat contient du gluten. Tu…", choix: ["Réponds au hasard", "Consultes la fiche du plat ou l'étiquette", "Lui dis de goûter", "Lui conseilles un autre restaurant"], bonne: 1, explication: "Une erreur sur un allergène peut provoquer une réaction grave." },
+      { q: "Face à une réclamation, que fais-tu ?", choix: ["Tu te défends", "Tu écoutes, tu reformules, puis tu proposes une solution", "Tu appelles un collègue et tu pars", "Tu ignores"], bonne: 1, explication: "Reformuler montre au client qu'il a été compris." },
+      { q: "Le fond de caisse, c'est…", choix: ["L'argent gagné dans la journée", "La monnaie placée dans la caisse au début du service, pour rendre la monnaie", "Le tiroir vide", "Les pourboires"], bonne: 1, explication: "On le compte en début de service et on le retire du total en fin de service." },
+      { q: "Comment rends-tu la monnaie ?", choix: ["Sans rien dire", "En annonçant la somme reçue, puis en comptant la monnaie à voix haute", "En la posant sur le plateau", "En arrondissant à ton avantage"], bonne: 1, explication: "Ça évite les erreurs et les contestations." },
+      { q: "En fin de service, avec quoi compare-t-on le contenu de la caisse ?", choix: ["Avec le menu", "Avec le ticket Z, le total des ventes", "Avec la caisse de la veille", "Avec rien"], bonne: 1, explication: "Un écart peut venir d'une erreur de rendu de monnaie ou de saisie." },
+      { q: "Quel est le taux de TVA pour un sandwich à emporter, mangé tout de suite ?", choix: ["2,1 %", "5,5 %", "10 %", "20 %"], bonne: 2, explication: "10 % pour la consommation immédiate, sur place ou à emporter. 5,5 % pour un produit alimentaire à consommer plus tard." },
+      { q: "Une canette de soda vendue en restauration rapide pour être bue tout de suite est taxée à…", choix: ["5,5 %", "10 %", "20 %", "0 %"], bonne: 1, explication: "Les boissons sans alcool à consommation immédiate suivent le taux de la restauration, 10 %. Les boissons alcoolisées sont à 20 %." },
+      { q: "Un client paie un menu à 8,50 € avec un billet de 20 €. Combien lui rends-tu ?", choix: ["10,50 €", "11,50 €", "12,50 €", "11 €"], bonne: 1, explication: "20 − 8,50 = 11,50 €. On compte en partant du prix : 8,50 + 0,50 = 9 ; + 1 = 10 ; + 10 = 20." },
+      { q: "En restauration collective, comment les convives paient-ils souvent ?", choix: ["En chèque uniquement", "Avec un badge ou une carte rechargeable", "Ils ne paient jamais", "En espèces uniquement"], bonne: 1, explication: "Le badge est débité à la caisse en sortie de ligne." }
+    ]
+
   }
 ];
