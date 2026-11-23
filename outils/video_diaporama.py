@@ -46,7 +46,7 @@ class Diapo:
         # barre de progression en bas
         self.d.rectangle([MARGE, H - 110, W - MARGE, H - 98], fill=LIGNE)
         self.d.rectangle([MARGE, H - 110, MARGE + int((W - 2 * MARGE) * progression), H - 98], fill=ACCENT)
-        self.d.text((MARGE, H - 80), "MFR de Peyregoux", font=police(28), fill=GRIS)
+        self.d.text((MARGE, H - 80), "CAP Cuisine · M. Andrès", font=police(28), fill=GRIS)
         self.y = 300
 
     def texte(self, t, taille=40, gras=False, couleur=ENCRE, retrait=0, espace=1.35, apres=0):

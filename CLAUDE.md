@@ -50,6 +50,8 @@ Il dépose une copie du dossier de la semaine sur son Google Drive, dans le doss
    - Nouvelle fiche : ajoutée au catalogue ; thème deviné (bandeau « Fiche technique — <Thème> », sinon mots-clés
      `MOTS_THEMES`). Si le thème deviné est faux, l'ajouter dans `NEW_FORMAT` (nom de fichier → thème).
    - Les semaines sont triées de la plus récente à la plus ancienne (année scolaire, septembre en premier).
+3 bis. Retirer la MFR des PDF : `python3 -I outils/retirer_mfr_pdf.py schemas` (texte « MFR de Peyregoux » remplacé
+   par « CAP Cuisine · M. Andrès », logo MFR masqué).
 4. Chiffrer : `python3 -I outils/chiffrer.py publier CODE`.
 5. Tester avec Playwright (vue téléphone) **via un serveur local** (`python3 -m http.server`, `fetch` ne marche pas en
    `file://`), sur une copie ne contenant que les fichiers suivis par git : saisir le code, la nouvelle semaine
@@ -62,6 +64,7 @@ Il dépose une copie du dossier de la semaine sur son Google Drive, dans le doss
 
 - Après toute modification du site : `python3 -I outils/maj_version.py` avant le commit (cache des téléphones).
 - Commits : utiliser la configuration git du dépôt (adresse anonyme GitHub `users.noreply.github.com`), **jamais** l'adresse Gmail du formateur.
+- Signature du site : « CAP Cuisine · M. Andrès ». **Ne pas mentionner la MFR** (ni « MFR de Peyregoux ») sur les pages.
 - Le site est masqué des moteurs de recherche (`<meta name="robots" content="noindex, nofollow">` sur chaque page) : le garder sur toute nouvelle page.
 
 - Les fiches sont adaptées d'un livre : elles ne doivent jamais être publiées en clair (seulement dans `protege/`).
