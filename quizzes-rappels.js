@@ -277,7 +277,7 @@ window.QUIZ_RAPPELS = {
     "L'hôte goûte en premier pour vérifier l'absence de défaut (goût de bouchon, vin madérisé). S'il accepte le vin, on sert les dames, puis les messieurs, et l'hôte en dernier.",
     "Carafer : verser un vin jeune dans une carafe pour l'aérer et ouvrir ses arômes. Décanter : transvaser doucement un vin vieux devant une bougie pour le séparer de son dépôt, qui reste dans la bouteille.",
     "Les licences : la petite licence restaurant (vins, bières, cidres) et la licence restaurant permettent de servir l'alcool seulement à l'occasion des repas. Les licences III et IV (débit de boissons) permettent de servir sans repas.",
-    "On ne remplit pas un verre à vin jusqu'au bord : on laisse de l'espace pour que le vin respire et que le client puisse le faire tourner et le sentir. On sert la bouteille étiquette visible, sans toucher le verre."
+    "Accords classiques avec les produits de la mer : huîtres et coquillages avec un blanc sec et vif (muscadet, picpoul-de-pinet, chablis) ; poissons en sauce crémée avec un blanc plus rond (bourgogne blanc). Les rouges tanniques donnent un goût métallique avec l'iode."
   ],
   "cshcr-arts-table": [
     "Le molleton (ou bulgomme) se pose sous la nappe. Il étouffe le bruit des couverts et de la vaisselle, protège la table et rend la nappe plus agréable au toucher. Il ne doit pas dépasser de la nappe.",
