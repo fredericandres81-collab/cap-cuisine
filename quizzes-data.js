@@ -431,6 +431,176 @@ window.QUIZZES = [
     ]
   },
   {
+    id: "cshcrp-vins",
+    titre: "Les vins",
+    matiere: "CAP CSHCR — Produits",
+    questions: [
+      { q: "Avec quel cépage fait-on le beaujolais ?", choix: ["Le pinot noir","Le gamay","Le merlot","La syrah"], bonne: 1, explication: "Le pinot noir est le cépage des bourgognes rouges." },
+      { q: "Un bourgogne rouge est élaboré avec…", choix: ["Du pinot noir","Du cabernet sauvignon","Du grenache","Du gamay uniquement"], bonne: 0, explication: "En Bourgogne, les rouges sont presque tous issus du pinot noir." },
+      { q: "Le chablis est…", choix: ["Un blanc sec de Bourgogne, à base de chardonnay","Un rouge léger du Beaujolais","Un blanc de Loire, à base de sauvignon","Un rosé de Provence"], bonne: 0, explication: "Chablis se situe au nord de la Bourgogne : vin blanc sec, vif et minéral." },
+      { q: "Avec quel cépage fait-on le sancerre blanc ?", choix: ["Le chardonnay","Le sauvignon","Le riesling","Le chenin"], bonne: 1, explication: "Le chenin est le cépage du vouvray et du savennières, en Anjou-Touraine." },
+      { q: "Comment obtient-on un vin rosé en France ?", choix: ["En mélangeant du vin blanc et du vin rouge","Avec des raisins noirs et une macération courte","Avec des variétés de raisins roses spéciales","En ajoutant du cassis à un vin blanc"], bonne: 1, explication: "Le mélange de blanc et de rouge est interdit, sauf pour le champagne rosé." },
+      { q: "Sur une étiquette, le millésime indique…", choix: ["L'année de mise en bouteille","L'année de récolte du raisin","L'âge minimum du vin","Le nom du domaine"], bonne: 1, explication: "Un vin millésimé 2022 est fait avec des raisins récoltés en 2022." },
+      { q: "Pourquoi un sauternes est-il un vin liquoreux, très sucré ?", choix: ["On ajoute du sucre avant la fermentation","La pourriture noble concentre le sucre dans les raisins","On ajoute de l'alcool pendant la fermentation (mutage)","Les raisins sont vendangés gelés"], bonne: 1, explication: "Le mutage concerne les vins doux naturels et le porto ; les raisins gelés donnent les vins de glace." },
+      { q: "Dans la méthode traditionnelle (celle du champagne), d'où viennent les bulles ?", choix: ["D'une seconde fermentation en bouteille","D'un ajout de gaz carbonique","D'une seconde fermentation en grande cuve fermée","D'un mélange avec de l'eau gazeuse"], bonne: 0, explication: "La fermentation en cuve close est une autre méthode, utilisée pour beaucoup de mousseux." },
+      { q: "Lequel de ces champagnes est le plus sucré ?", choix: ["Brut","Extra-brut","Demi-sec","Brut nature"], bonne: 2, explication: "Du moins sucré au plus sucré : brut nature, extra-brut, brut, extra-dry, sec, demi-sec, doux." },
+      { q: "Sur la rive droite de Bordeaux (Saint-Émilion, Pomerol), quel cépage domine ?", choix: ["Le cabernet sauvignon","Le merlot","Le pinot noir","La syrah"], bonne: 1, explication: "Le cabernet sauvignon domine sur la rive gauche (Médoc, Graves)." }
+    ]
+  },
+  {
+    id: "cshcrp-fromages",
+    titre: "Les fromages de nos régions",
+    matiere: "CAP CSHCR — Produits",
+    questions: [
+      { q: "De quelle région vient le brie de Meaux (AOP) ?", choix: ["Normandie","Île-de-France","Bourgogne","Champagne"], bonne: 1, explication: "Meaux est en Seine-et-Marne. Le camembert, lui, est normand." },
+      { q: "L'époisses est…", choix: ["Un fromage de Bourgogne à croûte lavée au marc de Bourgogne","Un fromage du Jura à pâte pressée cuite","Un fromage d'Alsace à croûte fleurie","Un chèvre de Normandie"], bonne: 0, explication: "Sa croûte orangée est lavée à l'eau-de-vie de marc pendant l'affinage." },
+      { q: "L'ossau-iraty est un fromage…", choix: ["Au lait de vache, de Savoie","Au lait de brebis, des Pyrénées","Au lait de chèvre, du Poitou","Au lait de vache, d'Auvergne"], bonne: 1, explication: "Il vient du Béarn et du Pays basque." },
+      { q: "Le mont-d'or (vacherin du Haut-Doubs) se reconnaît…", choix: ["À sa sangle d'épicéa et à sa pâte très crémeuse, souvent servie chaude au four","À sa croûte grise cendrée","À ses veines bleues","À sa forme de pyramide"], bonne: 0, explication: "On le trouve surtout en saison froide, de l'automne au printemps." },
+      { q: "La fourme d'Ambert est…", choix: ["Une pâte persillée au lait de vache, d'Auvergne","Une pâte pressée cuite du Jura","Un chèvre de la Loire","Un fromage de brebis corse"], bonne: 0, explication: "Le roquefort, autre pâte persillée, est au lait de brebis." },
+      { q: "Quel chèvre AOP se reconnaît à la paille de seigle qui le traverse en son centre ?", choix: ["Le sainte-maure-de-touraine","Le crottin de Chavignol","Le banon","Le valençay"], bonne: 0, explication: "La paille maintient la bûche, fragile, et porte l'identification de l'AOP." },
+      { q: "Le banon (AOP, Provence) est un fromage de chèvre enveloppé…", choix: ["De feuilles de châtaignier","De cendre de bois","D'une sangle d'épicéa","D'une feuille de vigne"], bonne: 0, explication: "Les feuilles, nouées avec du raphia, protègent le fromage pendant l'affinage." },
+      { q: "D'où vient la couleur orange de la mimolette ?", choix: ["Du rocou, un colorant naturel","De la carotte","Du safran","Du paprika"], bonne: 0, explication: "Le rocou est une graine d'Amérique du Sud, aussi utilisée pour le cheddar orange." },
+      { q: "Lequel de ces fromages n'est pas affiné ?", choix: ["La faisselle","Le comté","Le camembert","Le roquefort"], bonne: 0, explication: "Les fromages frais se consomment juste après l'égouttage." },
+      { q: "Que signifie la mention « fromage fermier » ?", choix: ["Fabriqué à la ferme, avec le lait de l'exploitation","Fabriqué en laiterie avec du lait de plusieurs fermes","Fabriqué avec du lait bio","Vendu uniquement sur les marchés"], bonne: 0, explication: "Un fromage « laitier » est fabriqué en laiterie avec le lait de plusieurs producteurs." }
+    ]
+  },
+  {
+    id: "cshcrp-alcools",
+    titre: "Les alcools et apéritifs",
+    matiere: "CAP CSHCR — Produits",
+    questions: [
+      { q: "Le cognac est obtenu par distillation…", choix: ["De vin blanc","De cidre","De céréales maltées","De jus de canne à sucre"], bonne: 0, explication: "Cidre : calvados. Céréales : whisky. Canne : rhum." },
+      { q: "Que signifie la mention XO sur un cognac ?", choix: ["C'est la qualité la plus jeune","C'est un cognac plus longuement vieilli que les VS et VSOP","C'est un cognac aromatisé","C'est un cognac de moins de 2 ans"], bonne: 1, explication: "Du plus jeune au plus vieux : VS (ou trois étoiles), VSOP, XO." },
+      { q: "Le calvados est une eau-de-vie de…", choix: ["Vin blanc","Cidre (pommes, parfois poires)","Prune","Grain"], bonne: 1, explication: "Le calvados est normand. L'eau-de-vie de prune est la mirabelle ou la quetsche." },
+      { q: "Le rhum agricole est fabriqué à partir…", choix: ["Du pur jus de canne à sucre","De la mélasse, un résidu de sucrerie","De betterave","De riz fermenté"], bonne: 0, explication: "Le rhum traditionnel, ou de sucrerie, est fait à partir de mélasse." },
+      { q: "Le porto, le pineau des Charentes et le banyuls sont des…", choix: ["Eaux-de-vie","Vins mutés : on ajoute de l'alcool pendant la fermentation","Liqueurs de fruits","Vins effervescents"], bonne: 1, explication: "Le mutage arrête la fermentation : le vin garde son sucre." },
+      { q: "Qu'est-ce qu'un kir royal ?", choix: ["Du vin blanc et de la crème de cassis","Du champagne et de la crème de cassis","Du crémant et de la crème de pêche","Du champagne et de la crème de mûre"], bonne: 1, explication: "Le kir classique se fait avec du vin blanc (traditionnellement un bourgogne aligoté)." },
+      { q: "Une bière blanche est brassée en partie avec…", choix: ["Du froment (blé)","Du riz","Du maïs uniquement","Du lait"], bonne: 0, explication: "Elle est trouble et souvent servie avec une tranche de citron." },
+      { q: "Sur une bouteille de whisky, la mention « 40 % vol. » signifie…", choix: ["40 % du volume est de l'alcool pur","La bouteille contient 40 g de sucre","Le whisky a 40 ans","40 % de la bouteille est de l'eau"], bonne: 0, explication: "C'est le titre alcoométrique volumique (TAV)." },
+      { q: "Comment sert-on un pastis ?", choix: ["Pur, sans eau","Avec de l'eau fraîche ajoutée devant le client, environ 5 volumes d'eau pour 1 de pastis","Chaud, avec du sucre","Avec du jus d'orange"], bonne: 1, explication: "Ajoutée au pastis, l'eau le rend trouble : c'est normal." },
+      { q: "Un jeune client semble avoir moins de 18 ans et commande une bière. Que fais-tu ?", choix: ["Tu le sers, la bière est peu alcoolisée","Tu lui demandes une pièce d'identité et tu refuses s'il est mineur","Tu lui sers une demi-bière","Tu le sers s'il est accompagné d'amis majeurs"], bonne: 1, explication: "La vente et l'offre d'alcool sont interdites aux mineurs, quelle que soit la boisson." }
+    ]
+  },
+  {
+    id: "cshcrp-softs",
+    titre: "Soft drinks et jus",
+    matiere: "CAP CSHCR — Produits",
+    questions: [
+      { q: "Quel ingrédient donne son amertume au tonic ?", choix: ["La quinine","La caféine","Le gingembre","Le citron vert"], bonne: 0, explication: "Le gingembre est la base du ginger ale et du ginger beer." },
+      { q: "Quelle est la différence entre un jus de fruits et un nectar ?", choix: ["Aucune","Le jus est 100 % fruit ; le nectar contient de l'eau et souvent du sucre ajouté","Le nectar est toujours plus riche en fruits","Le jus contient du sucre ajouté, pas le nectar"], bonne: 1, explication: "Un nectar contient généralement de 25 à 50 % de fruit, selon le fruit." },
+      { q: "Un « pur jus » d'orange est…", choix: ["Obtenu par simple pression des fruits, sans concentration","Fabriqué à partir de jus concentré auquel on a ajouté de l'eau","Un jus avec du sucre ajouté","Un nectar d'orange"], bonne: 0, explication: "« À base de concentré » : le jus a été concentré pour le transport, puis réhydraté." },
+      { q: "Un diabolo menthe, c'est…", choix: ["De la limonade et du sirop de menthe","De l'eau plate et du sirop de menthe","De l'eau gazeuse et du sirop de menthe","Du tonic et de la menthe fraîche"], bonne: 0, explication: "Le sirop avec de l'eau plate s'appelle simplement un « menthe à l'eau »." },
+      { q: "Quelle est la différence entre une citronnade et une limonade ?", choix: ["Aucune","La citronnade est faite de jus de citron, d'eau et de sucre, sans gaz ; la limonade est gazeuse","La limonade contient de l'alcool","La citronnade est toujours servie chaude"], bonne: 1, explication: "La limonade industrielle est une eau gazéifiée, sucrée et aromatisée au citron." },
+      { q: "Qu'est-ce qu'une boisson « zéro » ou « light » ?", choix: ["Une boisson sans eau","Une boisson dont le sucre est remplacé par des édulcorants","Une boisson sans gaz","Une boisson sans caféine"], bonne: 1, explication: "Elle apporte très peu de calories, mais garde un goût sucré." },
+      { q: "Un cocktail sans alcool s'appelle aussi un…", choix: ["Mocktail","Smoothie","Punch","Shrub"], bonne: 0, explication: "Le smoothie est un mixé de fruits ; le punch contient traditionnellement du rhum." },
+      { q: "Un smoothie, c'est…", choix: ["Un jus pressé filtré","Une boisson de fruits mixés entiers, épaisse, parfois avec du yaourt ou du lait","Un soda aux fruits","Un sirop de fruits dilué"], bonne: 1, explication: "Il garde les fibres des fruits, d'où sa texture épaisse." },
+      { q: "Pourquoi les boissons énergisantes sont-elles déconseillées aux enfants et aux adolescents ?", choix: ["Elles contiennent de l'alcool","Elles sont très riches en caféine et en sucre","Elles sont trop gazeuses","Elles contiennent du gluten"], bonne: 1, explication: "Elles contiennent aussi souvent de la taurine." },
+      { q: "À quelle température sert-on un soda ou un jus de fruits ?", choix: ["À température ambiante","Bien frais, autour de 6 à 8 °C","Glacé à 0 °C, sans exception","Tiède"], bonne: 1, explication: "Les glaçons se proposent en plus, selon le goût du client." }
+    ]
+  },
+  {
+    id: "cshcrp-boissons-chaudes",
+    titre: "Les boissons chaudes",
+    matiere: "CAP CSHCR — Produits",
+    questions: [
+      { q: "Quelle quantité de café moulu utilise-t-on pour un expresso ?", choix: ["Environ 2 g","Environ 7 g","Environ 15 g","Environ 25 g"], bonne: 1, explication: "Pour un double expresso, on double la dose (environ 14 g)." },
+      { q: "Quelle est la différence entre l'arabica et le robusta ?", choix: ["Aucune","L'arabica est plus doux et aromatique ; le robusta est plus corsé et plus riche en caféine","Le robusta est plus doux et moins caféiné","L'arabica est un café soluble"], bonne: 1, explication: "Les mélanges associent souvent les deux." },
+      { q: "Un ristretto, c'est…", choix: ["Un expresso allongé avec de l'eau chaude","Un expresso serré, plus court et plus concentré","Un expresso avec du lait","Un café filtre"], bonne: 1, explication: "L'expresso allongé est le lungo ; avec de l'eau chaude ajoutée, c'est un café américain." },
+      { q: "Un café noisette, c'est…", choix: ["Un expresso parfumé à la noisette","Un expresso avec une touche de lait ou de mousse de lait","Un café au lait servi en bol","Un expresso avec de la crème fouettée"], bonne: 1, explication: "Le nom vient de la couleur noisette obtenue." },
+      { q: "Quelle est la différence entre un thé vert et un thé noir ?", choix: ["Ce sont deux plantes différentes","Le thé vert n'est pas oxydé ; le thé noir est complètement oxydé","Le thé noir contient du café","Le thé vert est toujours parfumé à la menthe"], bonne: 1, explication: "Le thé oolong, ou thé bleu-vert, est semi-oxydé." },
+      { q: "À quelle température fait-on infuser un thé vert ?", choix: ["Eau bouillante à 100 °C","Environ 70 à 80 °C","Environ 40 °C","Eau froide"], bonne: 1, explication: "Trop chaude, l'eau rend le thé vert amer ; le thé noir supporte 90-95 °C." },
+      { q: "Une infusion (verveine, tilleul, camomille) se distingue du thé parce que…", choix: ["Elle est faite de plantes autres que le théier, sans théine","Elle contient plus de caféine que le thé","Elle est toujours servie froide","Elle se fait avec du café"], bonne: 0, explication: "On la propose souvent le soir, car elle ne contient pas d'excitant." },
+      { q: "Pourquoi préchauffe-t-on la tasse d'un expresso ?", choix: ["Pour la désinfecter","Pour que le café ne refroidisse pas trop vite et garde sa crème","Pour faire fondre le sucre","Pour qu'elle brille"], bonne: 1, explication: "Les machines ont souvent un chauffe-tasses sur le dessus." },
+      { q: "Un chocolat chaud « à l'ancienne » se prépare…", choix: ["Avec du chocolat fondu dans du lait chaud","Avec de l'eau chaude et du cacao en poudre sucré","Avec du café et du sucre","Avec du lait froid"], bonne: 0, explication: "Il est plus épais et plus riche qu'un chocolat préparé avec une poudre." },
+      { q: "Que signifie un expresso sans crème, avec un goût très amer et brûlé ?", choix: ["Il est parfait","L'extraction est mauvaise : café trop fin, trop tassé, ou eau trop chaude","Il faut ajouter du lait","C'est un ristretto"], bonne: 1, explication: "Un café trop pâle et aqueux est au contraire sous-extrait (mouture trop grosse)." }
+    ]
+  },
+  {
+    id: "cshcrp-eaux",
+    titre: "Eaux minérales et de source",
+    matiere: "CAP CSHCR — Produits",
+    questions: [
+      { q: "Quelle est la différence entre une eau minérale naturelle et une eau de source ?", choix: ["Aucune","L'eau minérale a une composition en minéraux stable et peut avoir des effets reconnus sur la santé ; l'eau de source doit seulement être potable","L'eau de source est traitée chimiquement","L'eau minérale est toujours gazeuse"], bonne: 1, explication: "Les deux sont d'origine souterraine et embouteillées à la source." },
+      { q: "Une eau « gazéifiée » est une eau…", choix: ["Naturellement gazeuse à la source","À laquelle on a ajouté du gaz carbonique","Qui a perdu ses bulles","Riche en sodium"], bonne: 1, explication: "Une eau « naturellement gazeuse » contient du gaz dès la source." },
+      { q: "Sur une étiquette d'eau, le « résidu sec » indique…", choix: ["La quantité totale de minéraux, en mg par litre","La quantité de gaz","La date d'embouteillage","Le degré d'acidité"], bonne: 0, explication: "On l'obtient en faisant évaporer l'eau et en pesant ce qui reste." },
+      { q: "Quelle eau convient pour préparer le biberon d'un nourrisson ?", choix: ["Une eau riche en minéraux et en sodium","Une eau faiblement minéralisée portant la mention « convient pour l'alimentation des nourrissons »","N'importe quelle eau gazeuse","L'eau la plus froide possible"], bonne: 1, explication: "Les reins des bébés supportent mal les minéraux en excès." },
+      { q: "Un client commande une carafe d'eau avec son repas. Combien la factures-tu ?", choix: ["Le prix d'une petite bouteille","Rien : l'eau du robinet en carafe servie avec un repas est gratuite","1 € par personne","Le prix au litre de l'eau minérale"], bonne: 1, explication: "Les bouteilles d'eau minérale ou de source, elles, sont payantes." },
+      { q: "Comment présente-t-on une bouteille d'eau minérale à table ?", choix: ["On l'ouvre en cuisine et on l'apporte sans bouchon","On l'ouvre devant le client, puis on le sert par la droite","On la pose fermée et le client l'ouvre lui-même","On la verse dans une carafe en cuisine"], bonne: 1, explication: "L'ouverture devant le client prouve que la bouteille est neuve." },
+      { q: "À quelle température sert-on une eau minérale ?", choix: ["Glacée, à 0 °C","Fraîche, autour de 8 à 12 °C","À température ambiante, autour de 20 °C","Tiède"], bonne: 1, explication: "Trop glacée, l'eau masque les saveurs du repas." },
+      { q: "Comment stocke-t-on les bouteilles d'eau en réserve ?", choix: ["Au soleil, sur le quai de livraison","À l'abri de la lumière, de la chaleur et des odeurs","À côté des produits d'entretien","Peu importe, l'eau ne s'abîme pas"], bonne: 1, explication: "Les bouteilles en plastique peuvent prendre le goût des produits voisins." },
+      { q: "Une eau riche en sodium (salée) est déconseillée…", choix: ["Aux sportifs","Aux personnes qui suivent un régime pauvre en sel","À tout le monde après 18 h","Aux enfants de plus de 10 ans"], bonne: 1, explication: "Le sodium est indiqué sur l'étiquette, avec les autres minéraux." },
+      { q: "Pour limiter les déchets, quelle solution un restaurant peut-il mettre en avant ?", choix: ["Ne servir que des petites bouteilles en plastique","Proposer l'eau du robinet filtrée en carafe, et des bouteilles en verre consignées","Supprimer l'eau de la carte","Servir l'eau dans des gobelets jetables"], bonne: 1, explication: "Le verre consigné est lavé et réutilisé." }
+    ]
+  },
+  {
+    id: "cshcrp-labels",
+    titre: "Les labels et signes de qualité",
+    matiere: "CAP CSHCR — Produits",
+    questions: [
+      { q: "Quelle est la différence entre l'AOC et l'AOP ?", choix: ["L'AOC est française ; l'AOP est son équivalent européen","L'AOP est réservée aux vins","L'AOC garantit l'agriculture biologique","Il n'existe que l'AOP"], bonne: 0, explication: "La plupart des produits AOC français portent aujourd'hui le logo européen AOP (sauf les vins, qui peuvent garder AOC)." },
+      { q: "Pour porter le logo AB (agriculture biologique), un plat préparé doit contenir…", choix: ["Au moins 50 % d'ingrédients agricoles bio","Au moins 95 % d'ingrédients agricoles bio","100 % d'ingrédients bio, eau et sel compris","Un seul ingrédient bio"], bonne: 1, explication: "Le logo européen (la feuille étoilée) est obligatoire ; le logo AB français est facultatif." },
+      { q: "Que garantit le Label Rouge ?", choix: ["Une origine géographique précise","Une qualité supérieure, contrôlée, par rapport aux produits courants","Un mode de production biologique","Un produit fabriqué en France uniquement"], bonne: 1, explication: "Ses produits passent des tests de dégustation réguliers." },
+      { q: "Les moules de bouchot portent la mention STG. Que signifie-t-elle ?", choix: ["Spécialité traditionnelle garantie : une recette ou un mode de production traditionnel","Sans traitement garanti","Signe de terroir géographique","Standard de taille garanti"], bonne: 0, explication: "La STG protège un savoir-faire, pas une origine." },
+      { q: "Les anciens « vins de pays » s'appellent aujourd'hui…", choix: ["Des vins AOP","Des vins IGP","Des vins Label Rouge","Des vins de France sans mention"], bonne: 1, explication: "Exemple : IGP Pays d'Oc, IGP Côtes de Gascogne." },
+      { q: "Le logo « fait maison » (une casserole surmontée d'un toit) sur une carte signifie…", choix: ["Que le plat est cuisiné sur place à partir de produits bruts","Que le plat vient d'un traiteur local","Que le plat est bio","Que le chef est maître restaurateur"], bonne: 0, explication: "Quelques produits transformés sont tolérés (fromage, pâtes sèches, charcuterie…)." },
+      { q: "Le titre de « maître restaurateur » est…", choix: ["Un diplôme de cuisine","Un titre délivré par l'État après un audit (cuisine faite maison, produits frais, accueil)","Une étoile d'un guide gastronomique","Un label d'agriculture bio"], bonne: 1, explication: "Il est attribué pour 4 ans après une visite de contrôle." },
+      { q: "Lequel n'est PAS un signe officiel de qualité et d'origine ?", choix: ["L'AOP","Le Label Rouge","L'agriculture biologique","L'étoile du Guide Michelin"], bonne: 3, explication: "Le Guide Michelin est un guide privé : ses étoiles récompensent un restaurant, pas un produit." },
+      { q: "Que garantit le label MSC sur un poisson sauvage ?", choix: ["Une pêche durable, qui préserve les stocks de poissons","Un poisson d'élevage bio","Un poisson pêché en France","Un poisson sans arêtes"], bonne: 0, explication: "Pour les poissons d'élevage, le label équivalent est ASC." },
+      { q: "Quel label environnemental peut obtenir un hôtel ou un restaurant ?", choix: ["La Clef Verte (ou l'Écolabel européen)","Le Label Rouge","L'AOP","La STG"], bonne: 0, explication: "Les signes AOP, Label Rouge et STG concernent des produits alimentaires." }
+    ]
+  },
+  {
+    id: "cshcrp-eco",
+    titre: "La démarche éco-responsable",
+    matiere: "CAP CSHCR — Produits",
+    questions: [
+      { q: "Un client demande à emporter les restes de son plat. Que fait le restaurant ?", choix: ["Il refuse, c'est interdit","Il doit lui fournir un contenant (« doggy bag »), réutilisable ou recyclable, s'il le demande","Il facture le reste du plat","Il le fait seulement pour les desserts"], bonne: 1, explication: "C'est une obligation pour les restaurants depuis 2021." },
+      { q: "Depuis 2021, quels objets en plastique à usage unique sont interdits en restauration ?", choix: ["Les pailles, les couverts et les touillettes en plastique jetable","Les bouteilles en verre","Les nappes en tissu","Les plateaux en inox"], bonne: 0, explication: "Il faut les remplacer par du réutilisable, ou par du bois ou du carton." },
+      { q: "Dans un fast-food, depuis 2023, comment doivent être servis les repas consommés sur place ?", choix: ["Dans des emballages jetables","Dans de la vaisselle réutilisable (verres, assiettes, couverts lavables)","Sans couverts","Uniquement en barquettes en carton"], bonne: 1, explication: "Le jetable reste autorisé pour la vente à emporter." },
+      { q: "Depuis 2024, que doivent faire tous les professionnels de la restauration avec leurs déchets alimentaires ?", choix: ["Les jeter avec les ordures ménagères","Les trier à part (biodéchets) pour qu'ils soient valorisés","Les donner aux clients","Les verser dans l'évier"], bonne: 1, explication: "Ils servent ensuite au compostage ou à la méthanisation." },
+      { q: "Un produit en « circuit court » est vendu…", choix: ["Avec au maximum un intermédiaire entre le producteur et le restaurant","Seulement par un producteur à moins de 10 km","Uniquement en agriculture biologique","Par une centrale d'achat nationale"], bonne: 0, explication: "Un circuit court n'est pas forcément local, mais il l'est souvent." },
+      { q: "Servir des tomates fraîches en décembre pose quel problème environnemental ?", choix: ["Aucun","Elles viennent de serres chauffées ou de pays lointains : forte consommation d'énergie et de transport","Elles sont interdites à la vente","Elles contiennent plus de vitamines"], bonne: 1, explication: "Elles ont aussi moins de goût que les tomates d'été." },
+      { q: "À l'hôtel, quel geste éco-responsable peut-on proposer aux clients ?", choix: ["Changer toutes les serviettes chaque jour, même propres","Réutiliser leurs serviettes en les laissant suspendues","Laisser la climatisation allumée fenêtres ouvertes","Distribuer des petites bouteilles en plastique de gel douche"], bonne: 1, explication: "On ne change alors que les serviettes posées au sol ou dans la baignoire." },
+      { q: "Que peut faire un restaurant des repas préparés et non servis, encore consommables ?", choix: ["Les jeter systématiquement","Les donner à une association d'aide alimentaire, en respectant les règles d'hygiène","Les resservir le lendemain sans contrôle","Les vendre en cachette au personnel"], bonne: 1, explication: "Le don doit respecter la chaîne du froid et la traçabilité." },
+      { q: "Quel équipement permet d'économiser l'eau en salle et à la plonge ?", choix: ["Des robinets à fort débit","Des mousseurs et des robinets temporisés","Le lavage des verres à l'eau courante","Un rinçage abondant de chaque assiette"], bonne: 1, explication: "Le mousseur mélange de l'air à l'eau : même confort, moins d'eau." },
+      { q: "Selon la loi EGalim, quelle part de produits durables et de qualité la restauration collective doit-elle servir ?", choix: ["10 %","Au moins 50 %, dont au moins 20 % de produits bio","100 % bio","Aucune obligation"], bonne: 1, explication: "Les produits « durables » comprennent notamment les labels de qualité (Label Rouge, AOP, IGP…)." }
+    ]
+  },
+  {
+    id: "cshcrp-petit-dejeuner",
+    titre: "Le petit déjeuner",
+    matiere: "CAP CSHCR — Produits",
+    questions: [
+      { q: "Que trouve-t-on dans un petit déjeuner continental ?", choix: ["Boisson chaude, jus de fruits, pain, viennoiseries, beurre et confiture","Œufs au bacon, saucisses et haricots à la tomate","Soupe miso, riz et poisson grillé","Uniquement un café et un croissant"], bonne: 0, explication: "Les œufs, le bacon et les saucisses caractérisent le petit déjeuner anglais." },
+      { q: "Laquelle de ces viennoiseries n'est PAS en pâte levée feuilletée ?", choix: ["Le croissant","Le pain au chocolat","La brioche","Le pain aux raisins"], bonne: 2, explication: "La brioche est une pâte levée, mais elle n'est pas feuilletée : on n'y incorpore pas de couches de beurre." },
+      { q: "Que contiennent les œufs Bénédicte ?", choix: ["Un muffin anglais, du jambon ou du bacon, un œuf poché et une sauce hollandaise","Des œufs brouillés et du saumon fumé","Une omelette au fromage","Des œufs durs et de la mayonnaise"], bonne: 0, explication: "Avec du saumon fumé à la place du jambon, on les appelle souvent œufs « royale »." },
+      { q: "Comment le client commande-t-il un petit déjeuner servi en chambre ?", choix: ["Il appelle la cuisine à 3 h du matin","Avec une carte accroche-porte remplie la veille, ou par téléphone","En descendant au restaurant","Le petit déjeuner en chambre est toujours le même pour tous"], bonne: 1, explication: "La carte indique l'heure de service souhaitée et les choix du client." },
+      { q: "Sur un buffet de petit déjeuner, à quelle température présente-t-on les yaourts, le beurre et la charcuterie ?", choix: ["À température ambiante pendant tout le service","Au froid, entre 0 et +3 °C (vitrine ou bacs réfrigérés)","À +10 °C","Au chaud"], bonne: 1, explication: "Les plats chauds (œufs, bacon) restent à +63 °C minimum." },
+      { q: "Pourquoi presse-t-on le jus d'orange à la demande plutôt qu'à l'avance ?", choix: ["Pour garder son goût et sa vitamine C, qui s'abîme à l'air","Parce que c'est plus rapide","Parce que le jus pressé à l'avance devient alcoolisé","Pour économiser des oranges"], bonne: 0, explication: "Pressé et laissé à l'air, le jus perd sa vitamine C et s'oxyde." },
+      { q: "Qu'est-ce qu'un brunch ?", choix: ["Un petit déjeuner très tôt","Un repas de fin de matinée qui associe petit déjeuner et déjeuner, sucré et salé","Un goûter","Un dîner léger"], bonne: 1, explication: "Le mot vient de l'anglais « breakfast » + « lunch »." },
+      { q: "Une chambre réservée « en demi-pension » comprend…", choix: ["La nuit seulement","La nuit, le petit déjeuner et un repas (déjeuner ou dîner)","La nuit et les trois repas","Le petit déjeuner seulement"], bonne: 1, explication: "La nuit avec petit déjeuner seulement, c'est la formule « chambre et petit déjeuner »." },
+      { q: "Comment présente-t-on le beurre et la confiture au petit déjeuner, pour limiter les déchets ?", choix: ["En portions individuelles en plastique, toujours","En pots ou en coupelles rechargeables, avec une cuillère de service","Directement sur l'assiette du client","On ne les propose plus"], bonne: 1, explication: "Les portions individuelles produisent beaucoup d'emballages." },
+      { q: "Un client allergique au gluten demande ce qu'il peut manger au buffet. Que fais-tu ?", choix: ["Tu lui dis d'éviter seulement le pain","Tu consultes la liste des allergènes de chaque produit et tu lui proposes les produits sans gluten adaptés","Tu lui conseilles de goûter avant","Tu lui réponds que tout contient du gluten"], bonne: 1, explication: "Le gluten se cache aussi dans les céréales, les viennoiseries, certaines charcuteries et sauces." }
+    ]
+  },
+  {
+    id: "cshcrp-hebergement",
+    titre: "L'hébergement",
+    matiere: "CAP CSHCR — Produits",
+    questions: [
+      { q: "Qui attribue les étoiles d'un hôtel en France ?", choix: ["Le Guide Michelin","Atout France, après une visite d'inspection, pour 5 ans","La mairie, chaque année","Les clients, par leurs avis en ligne"], bonne: 1, explication: "Le classement va de 1 à 5 étoiles, avec la distinction « Palace » au-dessus." },
+      { q: "Une chambre « twin », c'est…", choix: ["Une chambre avec un grand lit double","Une chambre avec deux lits séparés","Une chambre pour une seule personne","Une suite avec salon"], bonne: 1, explication: "Une chambre double a un grand lit pour deux personnes." },
+      { q: "À quoi sert l'alèse ?", choix: ["À décorer le lit","À protéger le matelas","À remplacer le drap housse","À couvrir l'oreiller"], bonne: 1, explication: "Elle se place sur le matelas, sous le drap housse." },
+      { q: "Les « produits d'accueil » d'une chambre, ce sont…", choix: ["Les meubles de la chambre","Les produits d'hygiène mis à disposition (gel douche, shampooing, savon…)","Les boissons du minibar","Les documents de bienvenue seulement"], bonne: 1, explication: "On les appelle aussi « amenities »." },
+      { q: "Que doit remplir un client étranger à son arrivée à l'hôtel ?", choix: ["Une fiche individuelle de police","Un bon de commande","Une déclaration de revenus","Rien de particulier"], bonne: 0, explication: "L'hôtelier la conserve et la tient à disposition des autorités." },
+      { q: "Qui paie la taxe de séjour ?", choix: ["L'hôtel, sur ses bénéfices","Le client, par nuit et par personne ; l'hôtel la reverse à la commune","Les employés de l'hôtel","L'État, chaque année"], bonne: 1, explication: "Son montant dépend du classement de l'hébergement et de la commune." },
+      { q: "Comment s'appelle une chambre qu'on ne peut pas louer à cause de travaux ou d'une panne ?", choix: ["Une chambre en recouche","Une chambre hors service","Une chambre à blanc","Une chambre libre propre"], bonne: 1, explication: "Le service des étages informe la réception de l'état de chaque chambre." },
+      { q: "Que fait-on du linge sale en retirant les draps d'une chambre ?", choix: ["On le pose sur le sol du couloir","On le met directement dans le sac ou le chariot prévu, sans le poser au sol ni le secouer","On le plie et on le remet dans l'armoire","On le laisse sur le lit pour la lingerie"], bonne: 1, explication: "Le secouer disperse la poussière et les microbes." },
+      { q: "Quelle est la différence entre un lit « à la française » et un lit « à la scandinave » ?", choix: ["Aucune","À la française : drap et couverture bordés ; à la scandinave : une couette dans sa housse","À la française : sans oreiller","À la scandinave : sans drap housse"], bonne: 1, explication: "La couette est plus rapide à faire, d'où son succès dans les hôtels." },
+      { q: "Pourquoi certaines chambres sont-elles dites « PMR » ?", choix: ["Parce qu'elles sont plus petites","Parce qu'elles sont adaptées aux personnes à mobilité réduite (accès, salle de bains, équipements)","Parce qu'elles sont réservées au personnel","Parce qu'elles sont moins chères"], bonne: 1, explication: "Un hôtel est un ERP : il doit respecter les règles d'accessibilité." }
+    ]
+  },
+  {
     id: "psr-production",
     titre: "La production collective",
     matiere: "CAP PSR",
