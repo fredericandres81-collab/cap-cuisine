@@ -36,7 +36,8 @@ fiches Word des menus, parfois des PDF et une vidéo. Sur son PC, c'est dans
 Il dépose une copie du dossier de la semaine sur son Google Drive, dans le dossier
 `Fiches techniques CAP Cuisine/fiches techniques données`.
 
-0. Demander le code d'accès au formateur, puis `python3 -I outils/chiffrer.py extraire CODE` (restaure `sources/`).
+0. **Récupérer d'abord la dernière version de GitHub** (`git pull`) : une autre session a pu publier entre-temps.
+   Demander le code d'accès au formateur, puis `python3 -I outils/chiffrer.py extraire CODE` (restaure `sources/`).
 1. Trouver le nouveau dossier avec le connecteur Google Drive (`search_files`). Depuis novembre, il est synchronisé
    automatiquement depuis le PC dans « Ordinateurs › Mon ordinateur portable › … › fiches techniques données ».
    Si une fiche de la semaine porte le même nom qu'une fiche du catalogue, inutile de la télécharger : la copier

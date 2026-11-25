@@ -100,7 +100,7 @@ def traiter(chemin):
             n += len(a_faire) + len(logos)
     if n:
         tmp = chemin + ".tmp"
-        doc.save(tmp, garbage=3, deflate=True)
+        doc.save(tmp, garbage=3, deflate=True, no_new_id=True)
         doc.close()
         os.replace(tmp, chemin)
     else:
