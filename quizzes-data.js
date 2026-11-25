@@ -431,6 +431,23 @@ window.QUIZZES = [
     ]
   },
   {
+    id: "cshcr-posture",
+    titre: "La posture professionnelle face au client",
+    matiere: "CAP CSHCR",
+    questions: [
+      { q: "Avant le service, quelle tenue est correcte en salle ?", choix: ["Tenue propre et repassée, cheveux attachés, ongles courts, bijoux absents ou très discrets, pas de parfum fort","Tenue propre, avec un parfum marqué pour couvrir les odeurs de cuisine","Tenue propre, bagues et bracelets autorisés s'ils sont discrets, cheveux libres s'ils sont propres","Tenue de ville soignée, la tenue professionnelle n'étant obligatoire qu'en cuisine"], bonne: 0, explication: "Un parfum fort gêne la dégustation ; les bijoux aux mains posent un problème d'hygiène." },
+      { q: "Pendant un moment calme du service, quelle attitude adoptes-tu en salle ?", choix: ["Debout, droit, mains libres, en observant discrètement les tables","Debout, bras croisés, pour paraître sérieux","Appuyé au comptoir, pour rester disponible","Assis près de l'office, pour être reposé au moment du coup de feu"], bonne: 0, explication: "Observer les tables permet d'anticiper : un verre vide, un client qui cherche un serveur." },
+      { q: "Un serveur écoute un client les bras croisés. Quel message envoie-t-il, sans le vouloir ?", choix: ["De l'assurance et de l'autorité","De la fermeture, une attitude défensive","Une écoute attentive","De la politesse"], bonne: 1, explication: "Le langage du corps parle avant les mots." },
+      { q: "Quelle phrase est la plus professionnelle quand un client demande une carafe d'eau ?", choix: ["« Pas de souci, je vous ramène ça. »","« Avec plaisir, je vous l'apporte tout de suite. »","« OK, ça marche ! »","« C'est noté, chef ! »"], bonne: 1, explication: "« Pas de souci » laisse entendre que la demande aurait pu être un problème." },
+      { q: "Un client te pose une question sur un vin, et tu ne connais pas la réponse. Que dis-tu ?", choix: ["« Je ne sais pas. »","« Je me renseigne et je reviens vers vous tout de suite. »","« Je crois que oui. »","« Il faudra demander au sommelier. »"], bonne: 1, explication: "On ne laisse jamais le client sans réponse, et on n'invente pas." },
+      { q: "Un client passe une commande compliquée. Quelle technique d'écoute active utilises-tu ?", choix: ["Tu reformules sa demande pour vérifier que tu as bien compris","Tu réponds avant la fin de sa phrase pour gagner du temps","Tu notes sans le regarder pour aller plus vite","Tu hoches la tête sans rien dire"], bonne: 0, explication: "Exemple : « Donc une entrecôte saignante, sans sauce, avec des haricots verts à la place des frites ? »" },
+      { q: "Entre collègues, en salle, peut-on parler des clients ?", choix: ["Oui, à voix basse","Non : on reste discret, jamais de commentaire visible ou audible par les clients","Oui, si on parle d'eux en anglais","Oui, seulement des habitués"], bonne: 1, explication: "Un client qui surprend un commentaire sur lui ne revient pas." },
+      { q: "Un client mécontent se met à crier dans la salle. Quelle est la bonne réaction ?", choix: ["Hausser le ton pour te faire respecter","Rester calme, parler posément, lui proposer de poursuivre la discussion à l'écart et prévenir ton responsable","Lui expliquer point par point qu'il a tort","Partir sans rien dire pour éviter le conflit"], bonne: 1, explication: "Le calme fait baisser la tension ; l'isoler protège les autres clients." },
+      { q: "Un client visiblement ivre commande une nouvelle bouteille de vin. Que fais-tu ?", choix: ["Tu le sers, puisqu'il paie","Tu refuses poliment de le servir, tu proposes une boisson sans alcool ou un café et tu préviens ton responsable","Tu lui sers un demi-verre seulement","Tu le sers si la personne qui l'accompagne est d'accord"], bonne: 1, explication: "Servir de l'alcool à une personne manifestement ivre est interdit." },
+      { q: "Un client en fauteuil roulant dîne avec un ami. À qui t'adresses-tu pour prendre sa commande ?", choix: ["Directement au client concerné","À l'ami qui l'accompagne","Aux deux, en regardant surtout l'accompagnant","À personne : tu attends qu'il te fasse signe"], bonne: 0, explication: "On s'adresse toujours à la personne elle-même, à sa hauteur si possible." }
+    ]
+  },
+  {
     id: "cshcrp-vins",
     titre: "Les vins",
     matiere: "CAP CSHCR — Produits",
